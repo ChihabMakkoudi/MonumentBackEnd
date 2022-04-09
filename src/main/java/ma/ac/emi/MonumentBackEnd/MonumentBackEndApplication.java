@@ -10,4 +10,5 @@ public class MonumentBackEndApplication {
 		SpringApplication.run(MonumentBackEndApplication.class, args);
 	}
 
+	
 }
