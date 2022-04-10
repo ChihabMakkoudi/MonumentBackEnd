@@ -21,6 +21,16 @@ public class Monument {
         this.setVille(ville);
         this.setEvaluations(evaluations);
     }
+    
+    public double getRating() {
+        double rating=0;
+        for (Evaluation evaluation : evaluations) {
+            rating += evaluation.getNote();
+        }
+        rating /= evaluations.size();
+        return rating;
+    }
+
 
 
     public Ville getVille() {
