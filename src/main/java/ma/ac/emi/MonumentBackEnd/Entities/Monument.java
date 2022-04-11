@@ -1,5 +1,6 @@
 package ma.ac.emi.MonumentBackEnd.Entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Monument {
@@ -11,17 +12,25 @@ public class Monument {
     private Ville ville;
     private List<Evaluation> evaluations;
     
-    public Monument(String id, String nom, String description, Coordinate coordinate, List<String> liensImage,
-            Ville ville, List<Evaluation> evaluations) {
+    public Monument(String id, String nom, String description, Coordinate coordinate, List<String> liensImage, Ville ville) {
         this.setId(id);
         this.setNom(nom);
         this.setDescription(description);
         this.setCoordinate(coordinate);
         this.setLiensImage(liensImage);
         this.setVille(ville);
-        this.setEvaluations(evaluations);
+        this.evaluations=new ArrayList<Evaluation>();
     }
     
+    public Monument(String id, String nom, String description, Coordinate coordinate, Ville ville) {
+        this.setId(id);
+        this.setNom(nom);
+        this.setDescription(description);
+        this.setCoordinate(coordinate);
+        this.liensImage=new ArrayList<String>();
+        this.setVille(ville);
+        this.evaluations=new ArrayList<Evaluation>();
+    }
     public double getRating() {
         double rating=0;
         for (Evaluation evaluation : evaluations) {
