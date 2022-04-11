@@ -11,23 +11,27 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
 
     @Override
     public void deleteUtilisateur(String idUtilisateur) {
-        // TODO Auto-generated method stub
-        
+        userDeletter.deleteUtilisateur(idUtilisateur);
     }
     @Override
     public void editUtilisateur(Utilisateur utilisateur) {
-        // TODO Auto-generated method stub
-        
+        if (checkUser(utilisateur.getId())) {
+            userDeletter.deleteUtilisateur(utilisateur.getId());
+            userAdder.addUtilisateur(utilisateur);
+        }
     }
     @Override
     public Utilisateur connection(String mail, String passeword) {
-        // TODO Auto-generated method stub
-        return null;
+        return userGetter.getUtilisateur(mail, passeword);
     }
     @Override
     public void creatUtilisateur(Utilisateur utilisateur) {
-        // TODO Auto-generated method stub
-        
+        if (!checkUser(utilisateur.getId())) {
+            userAdder.addUtilisateur(utilisateur);
+        }
+        else{
+            //TODO implement error handling
+        }
     }
     @Override
     public boolean checkAdmin(String token) {
@@ -36,7 +40,9 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
     }
     @Override
     public boolean checkUser(String token) {
-        return false;
+        Utilisateur utilisateur = userGetter.getUtilisateur(token);
+        if (utilisateur==null) return false;
+        return true;
     }
 
     
