@@ -41,6 +41,7 @@ public class UserDAO implements IDBUserAdder,IDBUserGetter,IDBUserDeletter{
         return null;
     }
 
+    // Create file using the id and the email as the name of the file
     @Override
     public void addUtilisateur(Utilisateur utilisateur) {
 
@@ -84,7 +85,7 @@ public class UserDAO implements IDBUserAdder,IDBUserGetter,IDBUserDeletter{
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource source = new DOMSource(doc);
-        File xmlFile = new File("users/"+utilisateur.getMail()+".xml");
+        File xmlFile = new File("users/"+utilisateur.getId()+"_"+utilisateur.getMail()+".xml");
         xmlFile.getParentFile().mkdirs();
         xmlFile.createNewFile();
         StreamResult result = new StreamResult(xmlFile);
