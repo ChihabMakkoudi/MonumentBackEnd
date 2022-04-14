@@ -1,14 +1,13 @@
 package ma.ac.emi.MonumentBackEnd.DAO;
 
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.springframework.stereotype.Repository;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -21,6 +20,7 @@ import ma.ac.emi.MonumentBackEnd.UserControllerpackage.IDBUserAdder;
 import ma.ac.emi.MonumentBackEnd.UserControllerpackage.IDBUserDeletter;
 import ma.ac.emi.MonumentBackEnd.UserControllerpackage.IDBUserGetter;
 
+@Repository
 public class UserDAO implements IDBUserAdder,IDBUserGetter,IDBUserDeletter{
 
     @Override
@@ -84,7 +84,10 @@ public class UserDAO implements IDBUserAdder,IDBUserGetter,IDBUserDeletter{
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource source = new DOMSource(doc);
-        StreamResult result = new StreamResult(new File("/users/"+utilisateur.getMail()+".xml"));
+        File xmlFile = new File("users/"+utilisateur.getMail()+".xml");
+        xmlFile.getParentFile().mkdirs();
+        xmlFile.createNewFile();
+        StreamResult result = new StreamResult(xmlFile);
         transformer.transform(source, result);
         
         // Output to console for testing
