@@ -2,6 +2,7 @@ package ma.ac.emi.MonumentBackEnd.daoTests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.File;
@@ -18,6 +19,7 @@ import ma.ac.emi.MonumentBackEnd.DAO.UserDAO;
 import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
 import ma.ac.emi.MonumentBackEnd.UserControllerpackage.IDBUserAdder;
 import ma.ac.emi.MonumentBackEnd.UserControllerpackage.IDBUserDeletter;
+import ma.ac.emi.MonumentBackEnd.UserControllerpackage.IDBUserGetter;
 
 @SpringBootTest(classes = {UserDAO.class})
 public class UserDaoTest {
@@ -26,6 +28,8 @@ public class UserDaoTest {
     private IDBUserAdder userAdder;
     @Autowired
     private IDBUserDeletter userDeletter;
+    @Autowired
+    private IDBUserGetter userGetter;
 
     @Test
     public void addingSimpleUser() throws IOException {
@@ -46,5 +50,15 @@ public class UserDaoTest {
 
     }
     
+    @Test
+    public void getUserWithId1() {
+        userDeletter.deleteUtilisateur("1");
+        Utilisateur utilisateur = new Utilisateur("1", "El", "Ahmed", "ahmed@el.com", "123456");
+        userAdder.addUtilisateur(utilisateur);
+
+        Utilisateur result_utilisateur = userGetter.getUtilisateur("1");
+        assertNotNull(result_utilisateur);
+        
+    }
     
 }
