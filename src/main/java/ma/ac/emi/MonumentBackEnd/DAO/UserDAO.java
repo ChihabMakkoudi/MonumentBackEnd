@@ -1,6 +1,7 @@
 package ma.ac.emi.MonumentBackEnd.DAO;
 
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
@@ -27,13 +28,39 @@ public class UserDAO implements IDBUserAdder,IDBUserGetter,IDBUserDeletter{
     public void deleteUtilisateur(String idUtilisateur) {
         File dir = new File("users/");
         File[] files = dir.listFiles((dir1, name) -> name.startsWith(idUtilisateur));
-        files[0].delete();
+        if (files.length>0)
+            files[0].delete();
 
     }
 
+    // return the file but return null if doesnt exist
     @Override
     public Utilisateur getUtilisateur(String idUtilisateur) {
-        // TODO Auto-generated method stub
+        File dir = new File("users/");
+        File[] files = dir.listFiles((dir1, name) -> name.startsWith(idUtilisateur));
+        if (files.length<1) return null;
+        File inputFile = files[0];
+        try {
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+        Document doc = dBuilder.parse(inputFile);
+        doc.getDocumentElement().normalize();
+
+        String id = idUtilisateur;
+        String nom = doc.getDocumentElement().getElementsByTagName("nom").item(0).getTextContent();
+        String prenom = doc.getDocumentElement().getElementsByTagName("prenom").item(0).getTextContent();
+        String mail = doc.getDocumentElement().getElementsByTagName("email").item(0).getTextContent();
+        String password = doc.getDocumentElement().getElementsByTagName("password").item(0).getTextContent();
+        
+        
+        return new Utilisateur(id, nom, prenom, mail, password);
+
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
         return null;
     }
 
@@ -93,9 +120,6 @@ public class UserDAO implements IDBUserAdder,IDBUserGetter,IDBUserDeletter{
         StreamResult result = new StreamResult(xmlFile);
         transformer.transform(source, result);
         
-        // Output to console for testing
-        StreamResult consoleResult = new StreamResult(System.out);
-        transformer.transform(source, consoleResult);
         
         } catch (Exception e) {
             e.printStackTrace();
