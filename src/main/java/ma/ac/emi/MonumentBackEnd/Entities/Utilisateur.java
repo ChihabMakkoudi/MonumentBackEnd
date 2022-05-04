@@ -1,6 +1,6 @@
 package ma.ac.emi.MonumentBackEnd.Entities;
 
-public class Utilisateur {
+public class Utilisateur implements IEditeur{
     String id;
     String nom;
     String prenom;
@@ -53,5 +53,10 @@ public class Utilisateur {
 
     public void setPasseword(String passeword) {
         this.passeword = passeword;
+    }
+
+    @Override
+    public String getNomComplet() {
+        return getNom() + " " + getPrenom();
     }
 }
