@@ -1,5 +1,6 @@
 package ma.ac.emi.MonumentBackEnd.DAO;
 
+import java.io.File;
 import java.util.List;
 
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
@@ -23,8 +24,8 @@ public class MonumentDAO implements IDBMonumentGetter,IDBMonumentAdder,IDBMonume
 
     @Override
     public void deleteMonument(String idMonument) {
-        // TODO Auto-generated method stub
-        
+        File monumentFile = new File("monuments/"+idMonument+".xml");
+        monumentFile.delete();
     }
 
     @Override
