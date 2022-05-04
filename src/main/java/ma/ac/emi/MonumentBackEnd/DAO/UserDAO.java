@@ -27,7 +27,7 @@ public class UserDAO implements IDBUserAdder,IDBUserGetter,IDBUserDeletter{
     @Override
     public void deleteUtilisateur(String idUtilisateur) {
         File dir = new File("users/");
-        File[] files = dir.listFiles((dir1, name) -> name.startsWith(idUtilisateur));
+        File[] files = dir.listFiles((dir1, name) -> name.startsWith(idUtilisateur + "_"));
         if (files.length>0)
             files[0].delete();
 
@@ -37,7 +37,7 @@ public class UserDAO implements IDBUserAdder,IDBUserGetter,IDBUserDeletter{
     @Override
     public Utilisateur getUtilisateur(String idUtilisateur) {
         File dir = new File("users/");
-        File[] files = dir.listFiles((dir1, name) -> name.startsWith(idUtilisateur));
+        File[] files = dir.listFiles((dir1, name) -> name.startsWith(idUtilisateur+"_"));
         if (files.length<1) return null;
         File inputFile = files[0];
         try {
@@ -69,7 +69,7 @@ public class UserDAO implements IDBUserAdder,IDBUserGetter,IDBUserDeletter{
     @Override
     public Utilisateur getUtilisateur(String mail, String passeword) {
         File dir = new File("users/");
-        File[] files = dir.listFiles((dir1, name) -> name.endsWith(mail+".xml"));
+        File[] files = dir.listFiles((dir1, name) -> name.endsWith("_"+mail+".xml"));
         if (files.length<1) return null;
         File inputFile = files[0];
         try {
