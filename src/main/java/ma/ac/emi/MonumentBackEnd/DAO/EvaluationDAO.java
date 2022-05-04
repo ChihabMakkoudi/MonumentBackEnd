@@ -24,7 +24,7 @@ public class EvaluationDAO implements IDBEvaluationGetter,IDBEvaluationAdder,IDB
     }
 
     @Override
-    public Evaluation geEvaluation(String idEvaluation) {
+    public Evaluation getEvaluation(String idEvaluation) {
         // TODO Auto-generated method stub
         return null;
     }
