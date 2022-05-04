@@ -12,10 +12,12 @@ import org.springframework.stereotype.Repository;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import java.io.File;
 
-
+import ma.ac.emi.MonumentBackEnd.Entities.Editeur;
 import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
 import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBEvaluationAdder;
 import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBEvaluationDeletter;
@@ -90,7 +92,32 @@ public class EvaluationDAO implements IDBEvaluationGetter,IDBEvaluationAdder,IDB
 
     @Override
     public Evaluation getEvaluation(String idEvaluation) {
-        // TODO Auto-generated method stub
+
+        File inputFile = new File("evaluations/"+idEvaluation+".xml");
+        try {
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+        Document doc = dBuilder.parse(inputFile);
+        doc.getDocumentElement().normalize();
+
+        String id = doc.getDocumentElement().getAttribute("id");
+        double note = Double.parseDouble(doc.getDocumentElement().getElementsByTagName("note").item(0).getTextContent());
+        String commentaire = doc.getDocumentElement().getElementsByTagName("comment").item(0).getTextContent();
+        
+        // editor
+        Node editeurNode = doc.getDocumentElement().getElementsByTagName("editeur").item(0);
+        String editorId = editeurNode.getAttributes().getNamedItem("id").getTextContent();
+        String nomComplet = editeurNode.getTextContent();
+        Editeur editeur = new Editeur(editorId, nomComplet);
+        
+        
+        return new Evaluation(id, note, commentaire, editeur);
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
         return null;
     }
     

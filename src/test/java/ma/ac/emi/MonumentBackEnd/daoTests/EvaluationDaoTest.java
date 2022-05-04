@@ -1,5 +1,6 @@
 package ma.ac.emi.MonumentBackEnd.daoTests;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.io.File;
@@ -34,6 +35,16 @@ public class EvaluationDaoTest {
         
 
 
+    }
+
+    @Test
+    public void getSimpleEvaluation() {
+        evaluationDAO.addEvaluation(new Evaluation("test", 4.4, "random text", new Editeur("Editor1","James Bond")));
+        Evaluation evaluation = evaluationDAO.getEvaluation("test");
+
+        assertEquals("random text",evaluation.getCommentaire());
+        assertEquals(4.4,evaluation.getNote());
+        assertEquals("James Bond",evaluation.getEditeur().getNomComplet());
     }
     
 }
