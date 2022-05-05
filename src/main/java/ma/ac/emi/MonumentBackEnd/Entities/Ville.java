@@ -3,6 +3,11 @@ package ma.ac.emi.MonumentBackEnd.Entities;
 public class Ville {
     private String nom;
     private String description;
+
+    public Ville() {
+        nom = "default city";
+        description = "";
+    }
     public Ville(String nom, String description) {
         this.setNom(nom);
         this.setDescription(description);

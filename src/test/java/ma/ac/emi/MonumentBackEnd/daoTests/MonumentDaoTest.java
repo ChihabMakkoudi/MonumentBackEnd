@@ -1,5 +1,6 @@
 package ma.ac.emi.MonumentBackEnd.daoTests;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.io.File;
@@ -40,6 +41,38 @@ public class MonumentDaoTest {
         Monument monument = new Monument("test1", "Challa", "monument", new Coordinate(2.5, 4.5), List.of("ABC", "WOW"), new Ville("Rabat", "Lights"));
         monumentDAO.addMonument(monument);
 
+
+
+    }
+
+
+    @Test
+    public void readMonumentById() {
+        Monument monument = new Monument("test1", "Challa", "monument", new Coordinate(2.5, 4.5), List.of("ABC", "WOW"), new Ville("Rabat", "Lights"));
+        monumentDAO.addMonument(monument);
+        Monument monument2 = monumentDAO.getMonument("test1");
+
+        assertEquals(monument.getNom(), monument2.getNom());
+        assertEquals(monument.getDescription(), monument2.getDescription());
+
+
+    }
+    @Test
+    public void readMultipleMonuments() {
+        Monument monument = new Monument("test1", "Challa", "monument", new Coordinate(2.5, 4.5), List.of("ABC", "WOW"), new Ville("Rabat", "Lights"));
+        Monument monument2 = new Monument("test2", "Challa2", "monument2", new Coordinate(2.5, 4.5), List.of("ABC", "WOW"), new Ville("Rabat", "Lights"));
+        monumentDAO.addMonument(monument);
+        monumentDAO.addMonument(monument2);
+        List<Monument> monuments = monumentDAO.getMonuments();
+        assertEquals(2, monuments.size());
+
+        Monument result1 = monuments.get(1);
+        Monument result2 = monuments.get(0);
+        
+        assertEquals(monument.getNom(), result1.getNom());
+        assertEquals(monument.getDescription(), result1.getDescription());
+        assertEquals(monument2.getNom(), result2.getNom());
+        assertEquals(monument2.getDescription(), result2.getDescription());
 
 
     }

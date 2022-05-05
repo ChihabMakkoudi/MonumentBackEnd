@@ -3,6 +3,9 @@ package ma.ac.emi.MonumentBackEnd.Entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Monument {
     private String id;
     private String nom;
@@ -11,6 +14,12 @@ public class Monument {
     private List<String> liensImage;
     private Ville ville;
     private List<Evaluation> evaluations;
+
+    public Monument() {
+        id = "default";
+        nom = "default";
+        description = "";
+    }
     
     public Monument(String id, String nom, String description, Coordinate coordinate, List<String> liensImage, Ville ville) {
         this.setId(id);
