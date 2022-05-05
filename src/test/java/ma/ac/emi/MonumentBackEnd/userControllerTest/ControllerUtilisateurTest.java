@@ -36,4 +36,13 @@ public class ControllerUtilisateurTest {
         userController.deleteUtilisateur(user1.getId());
         assertFalse(userController.checkUser(user1.getId()));
     }
+    @Test
+    public void editUser(){
+        Utilisateur user1=new Utilisateur("test","king","alaoui","maroc@gmail.com","123");
+        userAdder.addUtilisateur(user1);
+        user1.setNom("sidna");
+        userController.editUtilisateur(user1);
+        assertEquals("sidna",userGetter.getUtilisateur(user1.getId()).getNom());
+    }
+
 }
