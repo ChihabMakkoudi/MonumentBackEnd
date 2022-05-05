@@ -1,5 +1,6 @@
 package ma.ac.emi.MonumentBackEnd.UserControllerpackage;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.*;
@@ -7,9 +8,11 @@ import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
 
 @Component
 public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConnectionController,IUserEditor,IUserDeletter {
-
+    @Autowired
     IDBUserAdder userAdder;
+    @Autowired
     IDBUserGetter userGetter;
+    @Autowired
     IDBUserDeletter userDeletter;
 
     @Override
