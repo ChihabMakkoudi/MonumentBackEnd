@@ -29,12 +29,12 @@ public class ControllerUtilisateurTest {
         assertNull(userGetter.getUtilisateur(user1.getId()));
     }
     @Test
-    public void checkUser(){
+    public void checkExistence(){
         Utilisateur user1=new Utilisateur("test","king","alaoui","maroc@gmail.com","123");
         userAdder.addUtilisateur(user1);
-        assertTrue(userController.checkUser(user1.getId()));
+        assertTrue(userController.checkExistence(user1.getId()));
         userController.deleteUtilisateur(user1.getId());
-        assertFalse(userController.checkUser(user1.getId()));
+        assertFalse(userController.checkExistence(user1.getId()));
     }
     @Test
     public void editUser(){

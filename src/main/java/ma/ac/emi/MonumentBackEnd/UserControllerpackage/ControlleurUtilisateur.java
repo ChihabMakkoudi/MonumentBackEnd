@@ -21,7 +21,7 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
     }
     @Override
     public void editUtilisateur(Utilisateur utilisateur) {
-        if (checkUser(utilisateur.getId())) {
+        if (checkExistence(utilisateur.getId())) {
             userDeletter.deleteUtilisateur(utilisateur.getId());
             userAdder.addUtilisateur(utilisateur);
         }
@@ -32,24 +32,23 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
     }
     @Override
     public void creatUtilisateur(Utilisateur utilisateur) {
-        if (!checkUser(utilisateur.getId())) {
+        if (!checkExistence(utilisateur.getId())) {
             userAdder.addUtilisateur(utilisateur);
         }
         else{
             //TODO implement error handling
         }
     }
+    public boolean checkExistence(String token) {
+        Utilisateur utilisateur = userGetter.getUtilisateur(token);
+        return utilisateur!=null;
+    }
     @Override
     public boolean checkAdmin(String token) {
-        // TODO Auto-generated method stub
         return false;
     }
     @Override
     public boolean checkUser(String token) {
-        Utilisateur utilisateur = userGetter.getUtilisateur(token);
-        return utilisateur!=null;
-
+        return false;
     }
-
-    
 }
