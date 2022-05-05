@@ -4,20 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IEvaluationManager;
+import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentDeleter;
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentGetter;
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentManager;
 import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
 
-public class ControlleurMonument implements IMonumentGetter, IEvaluationManager, IMonumentManager{
+public class ControlleurMonument implements IMonumentGetter, IEvaluationManager, IMonumentManager, IMonumentDeleter{
 
     @Autowired
     private IDBMonumentGetter dbMonumentGetter;
     @Autowired
     private IDBMonumentAdder dbMonumentAdder;
+    @Autowired
+    private IDBMonumentDeletter dbMonumentDeletter;
 
     @Autowired
     private IDBEvaluationDeletter dbEvaluationDeletter;
@@ -67,5 +69,10 @@ public class ControlleurMonument implements IMonumentGetter, IEvaluationManager,
         monument.setId(monumentId);
         addMonument(monument);
     }
-    
+
+    @Override
+    public void deleteMonument(String monumentId) {
+        dbMonumentDeletter.deleteMonument(monumentId);
+    } 
+            
 }

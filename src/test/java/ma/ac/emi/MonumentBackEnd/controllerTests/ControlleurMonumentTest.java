@@ -58,4 +58,18 @@ public class ControlleurMonumentTest {
         assertTrue(file.exists());
 
     }
+
+    @Test
+    public void deleteMonument() {
+    
+        Monument monument = new Monument("test1", "Challa", "monument", new Coordinate(2.5, 4.5), List.of("ABC", "WOW"), new Ville("Rabat", "Lights"));
+        controlleurMonument.addMonument(monument);
+        
+        controlleurMonument.deleteMonument("test1");
+        
+        File file = new File("monuments/test1.xml");
+        assertFalse(file.exists());
+
+
+    }
 }
