@@ -16,6 +16,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import ma.ac.emi.MonumentBackEnd.Entities.Editeur;
 import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
@@ -94,6 +96,21 @@ public class EvaluationDAO implements IDBEvaluationGetter,IDBEvaluationAdder,IDB
     public Evaluation getEvaluation(String idEvaluation) {
 
         File inputFile = new File("evaluations/"+idEvaluation+".xml");
+        return getEvaluationFromFile(inputFile);
+    }
+
+    @Override
+    public List<Evaluation> getEvaluations() {
+        List<Evaluation> evaluations = new ArrayList<>();
+        File dir = new File("evaluations/");
+        File[] files = dir.listFiles();
+        for (File file : files) {
+            evaluations.add(getEvaluationFromFile(file));
+        }
+        return evaluations;
+    }
+    
+    private Evaluation getEvaluationFromFile(File inputFile) {
         try {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();

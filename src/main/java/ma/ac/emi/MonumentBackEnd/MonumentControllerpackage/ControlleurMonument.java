@@ -25,6 +25,8 @@ public class ControlleurMonument implements IMonumentGetter, IEvaluationManager,
     private IDBEvaluationDeletter dbEvaluationDeletter;
     @Autowired
     private IDBEvaluationAdder dbEvaluationAdder;
+    @Autowired
+    private IDBEvaluationGetter dbEvaluationGetter;
 
     @Override
     public List<Monument> getMonuments(List<String> motClets) {
@@ -33,7 +35,7 @@ public class ControlleurMonument implements IMonumentGetter, IEvaluationManager,
         for (Monument monument : monuments) {
             for (String motCle : motClets) {
                 if (monument.getDescription().contains(motCle)) {
-                    filtredMonuments.add(monument);
+                    filtredMonuments.add(getMonument(monument.getId()));
                     break;
                 }
             }
@@ -41,9 +43,18 @@ public class ControlleurMonument implements IMonumentGetter, IEvaluationManager,
         return filtredMonuments;
     }
 
+    // get the monument and get the evaluations
     @Override
     public Monument getMonument(String monumentId) {
-        return dbMonumentGetter.getMonument(monumentId);
+        Monument monument = dbMonumentGetter.getMonument(monumentId);
+        
+        List<Evaluation> evaluations = dbEvaluationGetter.getEvaluations();
+        for (Evaluation evaluation : evaluations) {
+            if (evaluation.getId().startsWith(monumentId +"_"))
+                monument.getEvaluations().add(evaluation);
+        }
+        
+        return monument;
     }
 
     // the evaluation id is monumentID_editorID

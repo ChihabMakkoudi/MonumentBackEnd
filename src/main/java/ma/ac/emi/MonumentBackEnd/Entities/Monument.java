@@ -19,6 +19,8 @@ public class Monument {
         id = "default";
         nom = "default";
         description = "";
+        this.liensImage=new ArrayList<String>();
+        this.evaluations=new ArrayList<Evaluation>();
     }
     
     public Monument(String id, String nom, String description, Coordinate coordinate, List<String> liensImage, Ville ville) {

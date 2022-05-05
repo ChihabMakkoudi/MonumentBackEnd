@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +46,19 @@ public class EvaluationDaoTest {
         assertEquals("random text",evaluation.getCommentaire());
         assertEquals(4.4,evaluation.getNote());
         assertEquals("James Bond",evaluation.getEditeur().getNomComplet());
+    }
+    
+    @Test
+    public void getEvaluations() {
+        evaluationDAO.addEvaluation(new Evaluation("test", 4.4, "random text", new Editeur("Editor1","James Bond")));
+        evaluationDAO.addEvaluation(new Evaluation("test2", 4.4, "random text", new Editeur("Editor1","James Bond")));
+        List<Evaluation> evaluations = evaluationDAO.getEvaluations();
+        Evaluation evaluation = evaluations.get(0);
+
+        assertEquals("random text",evaluation.getCommentaire());
+        assertEquals(4.4,evaluation.getNote());
+        assertEquals("James Bond",evaluation.getEditeur().getNomComplet());
+    
     }
     
 }
