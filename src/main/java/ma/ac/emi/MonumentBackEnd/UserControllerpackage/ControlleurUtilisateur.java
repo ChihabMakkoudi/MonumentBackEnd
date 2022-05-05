@@ -1,8 +1,11 @@
 package ma.ac.emi.MonumentBackEnd.UserControllerpackage;
 
+import org.springframework.stereotype.Component;
+
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.*;
 import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
 
+@Component
 public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConnectionController,IUserEditor,IUserDeletter {
 
     IDBUserAdder userAdder;

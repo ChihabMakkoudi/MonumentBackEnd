@@ -2,6 +2,8 @@ package ma.ac.emi.MonumentBackEnd.DAO;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
+import org.springframework.stereotype.Component;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,6 +19,7 @@ import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBMonumentAdder;
 import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBMonumentDeletter;
 import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBMonumentGetter;
 
+@Component
 public class MonumentDAO implements IDBMonumentGetter,IDBMonumentAdder,IDBMonumentDeletter {
 
     @Override

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IEvaluationManager;
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentDeleter;
@@ -12,6 +13,7 @@ import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentManager;
 import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
 
+@Component
 public class ControlleurMonument implements IMonumentGetter, IEvaluationManager, IMonumentManager, IMonumentDeleter{
 
     @Autowired

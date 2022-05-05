@@ -8,6 +8,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
@@ -25,6 +26,7 @@ import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBEvaluationAdder;
 import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBEvaluationDeletter;
 import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBEvaluationGetter;
 
+@Component
 public class EvaluationDAO implements IDBEvaluationGetter,IDBEvaluationAdder,IDBEvaluationDeletter{
 
     @Override
