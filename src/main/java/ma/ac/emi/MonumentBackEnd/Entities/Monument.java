@@ -32,6 +32,8 @@ public class Monument {
         this.evaluations=new ArrayList<Evaluation>();
     }
     public double getRating() {
+        if (evaluations.size()==0)
+            return 0;
         double rating=0;
         for (Evaluation evaluation : evaluations) {
             rating += evaluation.getNote();

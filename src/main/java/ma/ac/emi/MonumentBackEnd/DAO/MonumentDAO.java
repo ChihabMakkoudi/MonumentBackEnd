@@ -1,5 +1,8 @@
 package ma.ac.emi.MonumentBackEnd.DAO;
 
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+
+
 import java.io.File;
 import java.util.List;
 
@@ -30,7 +33,14 @@ public class MonumentDAO implements IDBMonumentGetter,IDBMonumentAdder,IDBMonume
 
     @Override
     public void addMonument(Monument monument) {
-        // TODO Auto-generated method stub
+ 
+        try {
+            XmlMapper xmlMapper = new XmlMapper();
+            xmlMapper.writeValue(new File("monuments/"+ monument.getId()+".xml"), monument);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+       
         
     }
 
