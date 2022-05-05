@@ -10,8 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(classes = {ControlleurUtilisateur.class, UserDAO.class})
 public class ControllerUtilisateurTest {
@@ -28,5 +27,13 @@ public class ControllerUtilisateurTest {
         assertNotNull(userGetter.getUtilisateur(user1.getId()));
         userController.deleteUtilisateur(user1.getId());
         assertNull(userGetter.getUtilisateur(user1.getId()));
+    }
+    @Test
+    public void checkUser(){
+        Utilisateur user1=new Utilisateur("test","king","alaoui","maroc@gmail.com","123");
+        userAdder.addUtilisateur(user1);
+        assertTrue(userController.checkUser(user1.getId()));
+        userController.deleteUtilisateur(user1.getId());
+        assertFalse(userController.checkUser(user1.getId()));
     }
 }

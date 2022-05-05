@@ -47,8 +47,8 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
     @Override
     public boolean checkUser(String token) {
         Utilisateur utilisateur = userGetter.getUtilisateur(token);
-        if (utilisateur==null) return false;
-        return true;
+        return utilisateur!=null;
+
     }
 
     
