@@ -4,14 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IEvaluationManager;
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentGetter;
+import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
 
-public class ControlleurMonument implements IMonumentGetter{
+public class ControlleurMonument implements IMonumentGetter, IEvaluationManager{
 
     @Autowired
     private IDBMonumentGetter dbMonumentGetter;
+
+    @Autowired
+    private IDBEvaluationDeletter dbMonumentDeletter;
+    @Autowired
+    private IDBEvaluationAdder dbMonumentAdder;
 
     @Override
     public List<Monument> getMonuments(List<String> motClets) {
@@ -31,6 +39,19 @@ public class ControlleurMonument implements IMonumentGetter{
     @Override
     public Monument getMonument(String monumentId) {
         return dbMonumentGetter.getMonument(monumentId);
+    }
+
+    // the evaluation id is monumentID_editorID
+    @Override
+    public void addEvaluation(Evaluation evaluation, String monumentId) {
+        evaluation.setId(monumentId + "_" + evaluation.getEditeur().getId());
+        dbMonumentAdder.addEvaluation(evaluation);
+        
+    }
+
+    @Override
+    public void deleteEvaluation(String evaluationId) {
+        dbMonumentDeletter.deleteEvaluation(evaluationId);
     }
     
 }
