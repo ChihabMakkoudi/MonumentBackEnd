@@ -8,18 +8,21 @@ import org.springframework.stereotype.Service;
 
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IEvaluationManager;
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentGetter;
+import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentManager;
 import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
 
-public class ControlleurMonument implements IMonumentGetter, IEvaluationManager{
+public class ControlleurMonument implements IMonumentGetter, IEvaluationManager, IMonumentManager{
 
     @Autowired
     private IDBMonumentGetter dbMonumentGetter;
+    @Autowired
+    private IDBMonumentAdder dbMonumentAdder;
 
     @Autowired
-    private IDBEvaluationDeletter dbMonumentDeletter;
+    private IDBEvaluationDeletter dbEvaluationDeletter;
     @Autowired
-    private IDBEvaluationAdder dbMonumentAdder;
+    private IDBEvaluationAdder dbEvaluationAdder;
 
     @Override
     public List<Monument> getMonuments(List<String> motClets) {
@@ -45,13 +48,24 @@ public class ControlleurMonument implements IMonumentGetter, IEvaluationManager{
     @Override
     public void addEvaluation(Evaluation evaluation, String monumentId) {
         evaluation.setId(monumentId + "_" + evaluation.getEditeur().getId());
-        dbMonumentAdder.addEvaluation(evaluation);
+        dbEvaluationAdder.addEvaluation(evaluation);
         
     }
 
     @Override
     public void deleteEvaluation(String evaluationId) {
-        dbMonumentDeletter.deleteEvaluation(evaluationId);
+        dbEvaluationDeletter.deleteEvaluation(evaluationId);
+    }
+
+    @Override
+    public void addMonument(Monument monument) {
+        dbMonumentAdder.addMonument(monument);
+    }
+
+    @Override
+    public void editMonument(String monumentId, Monument monument) {
+        monument.setId(monumentId);
+        addMonument(monument);
     }
     
 }
