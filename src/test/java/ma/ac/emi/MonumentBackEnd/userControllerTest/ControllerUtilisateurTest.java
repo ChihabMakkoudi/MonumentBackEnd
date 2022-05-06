@@ -10,6 +10,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(classes = {ControlleurUtilisateur.class, UserDAO.class})
@@ -44,5 +47,10 @@ public class ControllerUtilisateurTest {
         userController.editUtilisateur(user1);
         assertEquals("sidna",userGetter.getUtilisateur(user1.getId()).getNom());
     }
-
+    @Test
+    public void checkUser() throws NoSuchAlgorithmException  {
+        Utilisateur user1=new Utilisateur("test","king","alaoui","maroc@gmail.com","123");
+        userAdder.addUtilisateur(user1);
+        assertTrue(userController.checkUser("test_d4bdb4851b5198118c0d477d7bfce881c98a4089ecd36d90a14077d0839157c6"));
+    }
 }

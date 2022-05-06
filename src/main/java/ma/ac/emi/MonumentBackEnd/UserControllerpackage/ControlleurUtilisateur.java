@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.*;
 import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
 
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
 @Component
 public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConnectionController,IUserEditor,IUserDeletter {
     @Autowired
@@ -39,8 +42,8 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
             //TODO implement error handling
         }
     }
-    public boolean checkExistence(String token) {
-        Utilisateur utilisateur = userGetter.getUtilisateur(token);
+    public boolean checkExistence(String id) {
+        Utilisateur utilisateur = userGetter.getUtilisateur(id);
         return utilisateur!=null;
     }
     @Override
@@ -48,7 +51,12 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
         return false;
     }
     @Override
-    public boolean checkUser(String token) {
+    public boolean checkUser(String token) throws NoSuchAlgorithmException {
+        String id=token.split("_",2)[0];
+        if(checkExistence(id)){
+            System.out.println("exist");
+            return token.equals(userGetter.getUtilisateur(id).getToken());
+        }
         return false;
     }
 }
