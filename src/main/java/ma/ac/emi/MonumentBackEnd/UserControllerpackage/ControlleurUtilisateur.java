@@ -46,17 +46,19 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
         Utilisateur utilisateur = userGetter.getUtilisateur(id);
         return utilisateur!=null;
     }
-    @Override
-    public boolean checkAdmin(String token) {
-        return false;
-    }
+
     @Override
     public boolean checkUser(String token) throws NoSuchAlgorithmException {
         String id=token.split("_",2)[0];
         if(checkExistence(id)){
-            System.out.println("exist");
             return token.equals(userGetter.getUtilisateur(id).getToken());
         }
         return false;
+    }
+
+    @Override
+    public boolean checkAdmin(String token) throws NoSuchAlgorithmException {
+        String id=token.split("_",2)[0];
+        return id.equals("0") && checkUser(token);
     }
 }

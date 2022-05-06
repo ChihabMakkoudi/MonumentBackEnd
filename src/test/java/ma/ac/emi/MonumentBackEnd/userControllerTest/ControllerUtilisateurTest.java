@@ -53,4 +53,11 @@ public class ControllerUtilisateurTest {
         userAdder.addUtilisateur(user1);
         assertTrue(userController.checkUser("test_d4bdb4851b5198118c0d477d7bfce881c98a4089ecd36d90a14077d0839157c6"));
     }
+    @Test
+    public void checkAdmin() throws NoSuchAlgorithmException  {
+        Utilisateur admin=new Utilisateur("0","simo","elalaoui","admin@gmail.com","0001");
+        userAdder.addUtilisateur(admin);
+        assertTrue(userController.checkAdmin("0_f63bfc9627d4f33ff969386eec2bf1557d328d2c790ba3a4ebe1d8df9a4e42cf"));
+        userController.deleteUtilisateur("0");
+    }
 }
