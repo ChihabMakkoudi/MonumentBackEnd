@@ -61,10 +61,11 @@ public class MonumentDAO implements IDBMonumentGetter,IDBMonumentAdder,IDBMonume
 
     @Override
     public void addMonument(Monument monument) {
- 
+        File xmlFile = new File("monuments/"+ monument.getId()+".xml");
+        xmlFile.getParentFile().mkdirs();
         try {
             XmlMapper xmlMapper = new XmlMapper();
-            xmlMapper.writeValue(new File("monuments/"+ monument.getId()+".xml"), monument);
+            xmlMapper.writeValue(xmlFile, monument);
         } catch (Exception e) {
             e.printStackTrace();
         }

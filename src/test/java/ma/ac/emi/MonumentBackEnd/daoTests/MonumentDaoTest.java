@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.core.exc.StreamWriteException;
@@ -39,6 +40,7 @@ public class MonumentDaoTest {
     @Test
     public void addSimpleMonument() throws StreamWriteException, DatabindException, IOException {
         Monument monument = new Monument("test1", "Challa", "monument", new Coordinate(2.5, 4.5), List.of("ABC", "WOW"), new Ville("Rabat", "Lights"));
+        //Monument monument = new Monument("test1", "Challa", "monument", new Coordinate(2.5, 4.5), new ArrayList<String>(), new Ville("Rabat", "Lights"));
         monumentDAO.addMonument(monument);
 
 
