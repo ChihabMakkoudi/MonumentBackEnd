@@ -13,6 +13,8 @@ public class AdminController {
     private IMonumentDeleter monumentDeleter;
     @Autowired
     private IEvaluationManager evaluationManager;
+    @Autowired
+    private IUserDeletter userDeletter;
 
     @PostMapping("/monument/delete")
     public void deleteMonument(@RequestParam String monumentId) {
@@ -21,5 +23,9 @@ public class AdminController {
     @PostMapping("/evaluation/delete")
     public void deleteEvaluation(@RequestParam String evaluationId) {
         evaluationManager.deleteEvaluation(evaluationId);
+    }
+    @PostMapping("/user/delete")
+    public void deleteUser(@RequestParam String userId) {
+        userDeletter.deleteUtilisateur(userId);
     }
 }
