@@ -4,7 +4,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ctc.wstx.shaded.msv_core.util.Util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,6 +42,24 @@ public class VisitorController {
         if (user == null)
             return "fail";
         return user.getToken();
+    }
+
+    @PostMapping("/newuser")
+    public String createAccount(@RequestParam String nom,
+                                @RequestParam String prenom,
+                                @RequestParam String email,
+                                @RequestParam String password
+    ) {
+
+        Utilisateur user = new Utilisateur(email, nom, prenom, email, password);
+        try {
+            user.setId(user.getMail());
+            connectionController.creatUtilisateur(user);
+            return user.getToken();
+        } catch (Exception e) {
+            return "fail";
+        }
+
     }
 
 }
