@@ -23,6 +23,8 @@ public class ControllerUtilisateurTest {
     private IDBUserAdder userAdder;
     @Autowired
     private IDBUserGetter userGetter;
+    @Autowired
+    private IDBUserDeletter userDeletter;
     @Test
     public void deletingUser(){
         Utilisateur user1=new Utilisateur("test","king","alaoui","maroc@gmail.com","123");
@@ -59,5 +61,30 @@ public class ControllerUtilisateurTest {
         userAdder.addUtilisateur(admin);
         assertTrue(userController.checkAdmin("0_f63bfc9627d4f33ff969386eec2bf1557d328d2c790ba3a4ebe1d8df9a4e42cf"));
         userController.deleteUtilisateur("0");
+    }
+    @Test
+    public void createUser() {
+        userDeletter.deleteUtilisateur("a@a.com");
+        Utilisateur user1=new Utilisateur("a@a.com","me","pre","a@a.com","123");
+        try {
+            userController.creatUtilisateur(user1);
+        }
+        catch (Exception e){
+            fail();
+        }
+        Utilisateur user2  = userGetter.getUtilisateur("a@a.com");
+        assertEquals("me", user2.getNom());
+    }
+    @Test
+    public void createExistantUser() {
+        userDeletter.deleteUtilisateur("a@a.com");
+        Utilisateur user1=new Utilisateur("a@a.com","me","pre","a@a.com","123");
+        try {
+            userController.creatUtilisateur(user1);
+            userController.creatUtilisateur(user1);
+            fail();
+        }
+        catch (Exception e){
+        }
     }
 }

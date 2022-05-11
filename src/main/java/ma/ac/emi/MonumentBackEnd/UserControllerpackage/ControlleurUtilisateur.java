@@ -34,13 +34,12 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
         return userGetter.getUtilisateur(mail, passeword);
     }
     @Override
-    public void creatUtilisateur(Utilisateur utilisateur) {
-        if (!checkExistence(utilisateur.getId())) {
-            userAdder.addUtilisateur(utilisateur);
+    public void creatUtilisateur(Utilisateur utilisateur) throws Exception {
+        utilisateur.setId(utilisateur.getMail());
+        if (checkExistence(utilisateur.getId())) {
+            throw new Exception("User Exist");
         }
-        else{
-            //TODO implement error handling
-        }
+        userAdder.addUtilisateur(utilisateur);
     }
     public boolean checkExistence(String id) {
         Utilisateur utilisateur = userGetter.getUtilisateur(id);
