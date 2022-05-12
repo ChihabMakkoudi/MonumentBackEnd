@@ -1,8 +1,11 @@
 package ma.ac.emi.MonumentBackEnd.APIControllerspackage;
 
+import java.security.NoSuchAlgorithmException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,21 +23,27 @@ public class AdminController {
     private IUserDeletter userDeletter;
     @Autowired
     private IUserEditor userEditor;
+    @Autowired
+    private IAdminChecker adminChecker;
 
     @PostMapping("/monument/delete")
-    public void deleteMonument(@RequestParam String monumentId) {
+    public void deleteMonument(@RequestHeader String token, @RequestParam String monumentId) throws Exception {
+        if (!adminChecker.checkAdmin(token)) throw new Exception("not admin");
         monumentDeleter.deleteMonument(monumentId);
     }
     @PostMapping("/evaluation/delete")
-    public void deleteEvaluation(@RequestParam String evaluationId) {
+    public void deleteEvaluation(@RequestHeader String token, @RequestParam String evaluationId) throws Exception {
+        if (!adminChecker.checkAdmin(token)) throw new Exception("not admin");
         evaluationManager.deleteEvaluation(evaluationId);
     }
     @PostMapping("/user/delete")
-    public void deleteUser(@RequestParam String userId) {
+    public void deleteUser(@RequestHeader String token, @RequestParam String userId) throws Exception {
+        if (!adminChecker.checkAdmin(token)) throw new Exception("not admin");
         userDeletter.deleteUtilisateur(userId);
     }
     @PostMapping("/user/edit")
-    public void editAccount(@RequestBody Utilisateur user) {
+    public void editAccount(@RequestHeader String token, @RequestBody Utilisateur user) throws Exception {
+        if (!adminChecker.checkAdmin(token)) throw new Exception("not admin");
         userEditor.editUtilisateur(user);
     }
 }
