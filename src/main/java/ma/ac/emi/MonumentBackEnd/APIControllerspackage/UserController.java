@@ -3,6 +3,7 @@ package ma.ac.emi.MonumentBackEnd.APIControllerspackage;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -13,6 +14,7 @@ import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
 import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
 
+@CrossOrigin
 @RestController
 public class UserController {
     
