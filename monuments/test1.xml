@@ -1,0 +1,1 @@
+<Monument><id>test1</id><nom>Challa</nom><description>monument</description><coordinate><latitude>2.5</latitude><longitude>4.5</longitude></coordinate><liensImage><liensImage>ABC</liensImage><liensImage>WOW</liensImage></liensImage><ville><nom>Rabat</nom><description>Lights</description></ville><evaluations/><rating>0.0</rating></Monument>

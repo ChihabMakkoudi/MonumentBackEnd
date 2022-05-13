@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Account id="1">
+    <nom>El</nom>
+    <prenom>Ahmed</prenom>
+    <email>ahmed@el.com</email>
+    <password>123456</password>
+</Account>

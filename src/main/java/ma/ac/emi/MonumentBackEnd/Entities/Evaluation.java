@@ -1,12 +1,14 @@
 package ma.ac.emi.MonumentBackEnd.Entities;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Evaluation {
     private String id;
     private double note;
     private String commentaire;
-    private IEditeur editeur;
+    private Editeur editeur;
 
-    public Evaluation(String id, double note, String commentaire, IEditeur editeur) {
+    public Evaluation(String id, double note, String commentaire, Editeur editeur) {
         setId(id);
         setNote(note);
         setCommentaire(commentaire);
@@ -41,7 +43,7 @@ public class Evaluation {
         return editeur;
     }
 
-    public void setEditeur(IEditeur editeur) {
+    public void setEditeur(Editeur editeur) {
         this.editeur = editeur;
     }
    

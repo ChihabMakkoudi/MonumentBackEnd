@@ -1,0 +1,18 @@
+<Monument>
+    <id>1</id>
+    <nom>Mausoleum of Mohammad V</nom>
+    <description>Boulevard Abi Regreg, Rabat 10030 Morocco</description>
+    <coordinate>
+        <latitude>34.022766</latitude>
+        <longitude>-6.821399</longitude>
+    </coordinate>
+    <liensImage>
+        <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/06/13/e2/bb/mausoleo-de-mohamed-v.jpg</liensImage>
+    </liensImage>
+    <ville>
+        <nom>Rabat</nom>
+        <description>RabatO</description>
+    </ville>
+    <evaluations/>
+    <rating>4.5</rating>
+</Monument>
