@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
 import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
 
+@CrossOrigin
 @RestController
 @CrossOrigin
 public class VisitorController {

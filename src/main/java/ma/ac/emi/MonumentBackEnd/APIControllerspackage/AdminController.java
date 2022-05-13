@@ -3,6 +3,7 @@ package ma.ac.emi.MonumentBackEnd.APIControllerspackage;
 import java.security.NoSuchAlgorithmException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
 
 
+@CrossOrigin
 @RestController
 public class AdminController {
 

@@ -14,6 +14,7 @@ import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
 import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
 
+@CrossOrigin
 @RestController
 @CrossOrigin
 public class UserController {

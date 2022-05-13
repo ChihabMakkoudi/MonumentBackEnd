@@ -87,4 +87,12 @@ public class ControllerUtilisateurTest {
         catch (Exception e){
         }
     }
+    @Test
+    public void createAdmin() throws NoSuchAlgorithmException {
+        userDeletter.deleteUtilisateur("0");
+        Utilisateur user0=new Utilisateur("0","admin","admin","admin@admin.com","admin");
+        userAdder.addUtilisateur(user0);
+        assertTrue(userController.checkAdmin(user0.getToken()));
+
+    }
 }
