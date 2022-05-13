@@ -43,22 +43,22 @@ public class UserController {
     }
 
     @PostMapping("/evaluation/add")
-    public void addEvaluation(@RequestHeader String token, @RequestParam String monumentId, @RequestBody Evaluation evaluation) throws Exception {
-        if (!userChecker.checkUser(token)) throw new Exception("not user");
-        if (getUserIdFromToken(token) != evaluation.getEditeur().getId()) throw new Exception("not same user");
+    public void addEvaluation(@RequestParam String monumentId, @RequestBody Evaluation evaluation) throws Exception {
+        // if (!userChecker.checkUser(token)) throw new Exception("not user");
+        // if (getUserIdFromToken(token) != evaluation.getEditeur().getId()) throw new Exception("not same user");
         evaluationManager.addEvaluation(evaluation, monumentId);
     }
     
     @PostMapping("/evaluation/userdelete")
-    public void deleteEvaluation(@RequestHeader String token, @RequestParam String evaluationId) throws Exception {
-        if (!userChecker.checkUser(token)) throw new Exception("not user");
+    public void deleteEvaluation(/*@RequestHeader String token,*/ @RequestParam String evaluationId) throws Exception {
+        // if (!userChecker.checkUser(token)) throw new Exception("not user");
         evaluationManager.deleteEvaluation(evaluationId);
     }
 
     @PostMapping("/account/edit")
-    public void editAccount(@RequestHeader String token, @RequestBody Utilisateur user) throws Exception {
-        if (!userChecker.checkUser(token)) throw new Exception("not user");
-        if (getUserIdFromToken(token) != user.getId()) throw new Exception("not same user");
+    public void editAccount(/*@RequestHeader String token,*/ @RequestBody Utilisateur user) throws Exception {
+        // if (!userChecker.checkUser(token)) throw new Exception("not user");
+        // if (getUserIdFromToken(token) != user.getId()) throw new Exception("not same user");
         userEditor.editUtilisateur(user);
 
     }
