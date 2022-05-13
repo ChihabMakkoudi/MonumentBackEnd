@@ -17,7 +17,6 @@ import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
 
 @CrossOrigin
 @RestController
-@CrossOrigin
 public class VisitorController {
     
     @Autowired
