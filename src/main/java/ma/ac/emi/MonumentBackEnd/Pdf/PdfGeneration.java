@@ -25,7 +25,7 @@ public class PdfGeneration
 
     static {
         DATA_DIR = "monuments//";
-        RESOURCES_DIR = "src//main//resources//";
+        RESOURCES_DIR = "src//main//resources//templates//";
         OUTPUT_FILE = "src//main//resources//temp//output.pdf";
     }
 
