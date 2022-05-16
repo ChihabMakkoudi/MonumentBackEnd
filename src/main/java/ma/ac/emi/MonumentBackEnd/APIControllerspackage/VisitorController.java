@@ -70,6 +70,7 @@ public class VisitorController {
         return monumentGetter.getMonuments(motClets);
     }
     
+    @CrossOrigin
     @PostMapping("/auth")
     public String authentification(@RequestParam String email, @RequestParam String password) throws NoSuchAlgorithmException {
         Utilisateur user = connectionController.connection(email, password);
