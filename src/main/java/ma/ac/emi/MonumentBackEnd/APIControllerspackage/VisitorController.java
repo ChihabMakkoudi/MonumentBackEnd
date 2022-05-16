@@ -79,6 +79,7 @@ public class VisitorController {
         return user.getToken();
     }
 
+    @CrossOrigin
     @PostMapping("/newuser")
     public String createAccount(@RequestParam String nom,
                                 @RequestParam String prenom,
