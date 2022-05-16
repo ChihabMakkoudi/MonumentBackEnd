@@ -85,6 +85,9 @@ public class VisitorController {
                                 @RequestParam String email,
                                 @RequestParam String password
     ) {
+        // if something is missing fail
+        if (nom.isEmpty() || prenom.isEmpty() || email.isEmpty() || password.isEmpty()) 
+            return "fail";
 
         Utilisateur user = new Utilisateur(email, nom, prenom, email, password);
         try {
