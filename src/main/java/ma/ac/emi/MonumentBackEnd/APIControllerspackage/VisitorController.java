@@ -70,6 +70,7 @@ public class VisitorController {
         return monumentGetter.getMonuments(motClets);
     }
     
+    @CrossOrigin
     @PostMapping("/auth")
     public String authentification(@RequestParam String email, @RequestParam String password) throws NoSuchAlgorithmException {
         Utilisateur user = connectionController.connection(email, password);
@@ -78,12 +79,16 @@ public class VisitorController {
         return user.getToken();
     }
 
+    @CrossOrigin
     @PostMapping("/newuser")
     public String createAccount(@RequestParam String nom,
                                 @RequestParam String prenom,
                                 @RequestParam String email,
                                 @RequestParam String password
     ) {
+        // if something is missing fail
+        if (nom.isEmpty() || prenom.isEmpty() || email.isEmpty() || password.isEmpty()) 
+            return "fail";
 
         Utilisateur user = new Utilisateur(email, nom, prenom, email, password);
         try {
