@@ -28,6 +28,7 @@ public class AdminController {
     @Autowired
     private IAdminChecker adminChecker;
 
+    @CrossOrigin
     @PostMapping("/monument/delete")
     public void deleteMonument(@RequestHeader String token, @RequestParam String monumentId) throws Exception {
         if (!adminChecker.checkAdmin(token)) throw new Exception("not admin");
