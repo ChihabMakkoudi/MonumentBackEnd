@@ -20,34 +20,36 @@ import org.apache.fop.apps.MimeConstants;
 public class PdfGeneration
 {
     public static final String RESOURCES_DIR;
-    public static final String OUTPUT_DIR;
+    public static final String OUTPUT_FILE;
+    public static final String DATA_DIR;
 
     static {
-        RESOURCES_DIR = "src//main//resources//input//";
-        OUTPUT_DIR = "src//main//resources//output//";
+        DATA_DIR = "monuments//";
+        RESOURCES_DIR = "src//main//resources//templates//";
+        OUTPUT_FILE = "src//main//resources//temp//output.pdf";
     }
 
     public static void main( String[] args )
     {
         try {
-            convertToPDF();
+            convertToPDF("5");
         } catch (FOPException | IOException | TransformerException e) {
             e.printStackTrace();
         }
     }
 
-    public static void convertToPDF() throws IOException, FOPException, TransformerException {
+    public static void convertToPDF(String filename) throws IOException, FOPException, TransformerException {
         // the XSL FO file
-        File xsltFile = new File(RESOURCES_DIR + "//template.xsl");
+        File xsltFile = new File(RESOURCES_DIR + "//pdf_template.xsl");
         // the XML file which provides the input
-        StreamSource xmlSource = new StreamSource(new File(RESOURCES_DIR + "//data1.xml"));
+        StreamSource xmlSource = new StreamSource(new File(DATA_DIR + "//"+filename+".xml"));
         // create an instance of fop factory
         FopFactory fopFactory = FopFactory.newInstance(new File(".").toURI());
         // a user agent is needed for transformation
         FOUserAgent foUserAgent = fopFactory.newFOUserAgent();
         // Setup output
         OutputStream out;
-        out = new java.io.FileOutputStream(OUTPUT_DIR + "//output.pdf");
+        out = new java.io.FileOutputStream(OUTPUT_FILE);
 
         try {
             // Construct fop with desired output format

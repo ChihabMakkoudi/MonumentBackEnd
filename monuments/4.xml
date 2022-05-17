@@ -1,1 +1,19 @@
-<Monument><id>4</id><nom>Hassan Tower</nom><description>Boulevard Mohamed Lyazidi, Rabat 10030 Morocco</description><coordinate><latitude>34.024136</latitude><longitude>-6.822816</longitude></coordinate><liensImage><liensImage>https://media-cdn.tripadvisor.com/media/photo-o/01/24/77/d3/the-tour-hassan-or-hassan.jpg</liensImage></liensImage><ville><nom>Rabat</nom><description>Rabat</description></ville><evaluations/><rating>4.0</rating></Monument>
+<Monument>
+    <id>4</id>
+    <nom>Hassan Tower</nom>
+    <description>Boulevard Mohamed Lyazidi, Rabat 10030 Morocco</description>
+    <coordinate>
+        <latitude>34.024136</latitude>
+        <longitude>-6.822816</longitude>
+    </coordinate>
+    <liensImage>
+        <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/01/24/77/d3/the-tour-hassan-or-hassan.jpg</liensImage>
+        <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/01/24/77/d3/the-tour-hassan-or-hassan.jpg</liensImage>
+    </liensImage>
+    <ville>
+        <nom>Rabat</nom>
+        <description>Rabat</description>
+    </ville>
+    <evaluations/>
+    <rating>4.0</rating>
+</Monument>

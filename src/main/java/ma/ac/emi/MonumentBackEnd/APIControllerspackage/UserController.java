@@ -28,16 +28,16 @@ public class UserController {
     private IUserEditor userEditor;
 
     @PostMapping("/monument/add")
-    public String addMonument(@RequestHeader String token, @RequestBody Monument monument) throws Exception {
-        if (!userChecker.checkUser(token)) throw new Exception("not user");
+    public String addMonument(/*@RequestHeader String token,*/ @RequestBody Monument monument) throws Exception {
+        // if (!userChecker.checkUser(token)) throw new Exception("not user");
         monument.setId(UUID.randomUUID().toString());
         monumentManager.addMonument(monument);
         return monument.getId();
     }
 
     @PostMapping("/monument/edit")
-    public String editMonument(@RequestHeader String token, @RequestBody Monument monument) throws Exception {
-        if (!userChecker.checkUser(token)) throw new Exception("not user");
+    public String editMonument(/*@RequestHeader String token,*/ @RequestBody Monument monument) throws Exception {
+        // if (!userChecker.checkUser(token)) throw new Exception("not user");
         monumentManager.editMonument(monument.getId(),monument);
         return monument.getId();
     }
