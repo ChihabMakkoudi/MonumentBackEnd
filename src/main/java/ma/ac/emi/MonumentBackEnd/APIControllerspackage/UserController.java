@@ -27,6 +27,7 @@ public class UserController {
     @Autowired
     private IUserEditor userEditor;
 
+    @CrossOrigin
     @PostMapping("/monument/add")
     public String addMonument(/*@RequestHeader String token,*/ @RequestBody Monument monument) throws Exception {
         // if (!userChecker.checkUser(token)) throw new Exception("not user");
@@ -35,6 +36,7 @@ public class UserController {
         return monument.getId();
     }
 
+    @CrossOrigin
     @PostMapping("/monument/edit")
     public String editMonument(/*@RequestHeader String token,*/ @RequestBody Monument monument) throws Exception {
         // if (!userChecker.checkUser(token)) throw new Exception("not user");
