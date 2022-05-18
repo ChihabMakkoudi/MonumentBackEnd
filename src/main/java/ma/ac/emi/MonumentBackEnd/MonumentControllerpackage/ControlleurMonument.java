@@ -1,21 +1,24 @@
-package ma.ac.emi.MonumentBackEnd.MonumentControllerpackage;
+    package ma.ac.emi.MonumentBackEnd.MonumentControllerpackage;
 
-import java.util.ArrayList;
-import java.util.List;
+    import java.util.ArrayList;
+    import java.util.List;
 
+import org.apache.logging.log4j.message.ReusableMessage;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+    import org.springframework.stereotype.Component;
 
-import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IEvaluationManager;
-import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentDeleter;
-import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentGetter;
-import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentManager;
-import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
-import ma.ac.emi.MonumentBackEnd.Entities.Monument;
+    import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IEvaluationManager;
+    import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentDeleter;
+    import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentGetter;
+    import ma.ac.emi.MonumentBackEnd.APIControllerspackage.IMonumentManager;
+    import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
+    import ma.ac.emi.MonumentBackEnd.Entities.Monument;
 
-@Component
-public class ControlleurMonument implements IMonumentGetter, IEvaluationManager, IMonumentManager, IMonumentDeleter{
+    @Component
+    public class ControlleurMonument implements IMonumentGetter, IEvaluationManager, IMonumentManager, IMonumentDeleter{
 
+    @Autowired
+    private IDBMonumentFilter dbMonumentFilter;
     @Autowired
     private IDBMonumentGetter dbMonumentGetter;
     @Autowired
@@ -30,20 +33,21 @@ public class ControlleurMonument implements IMonumentGetter, IEvaluationManager,
     @Autowired
     private IDBEvaluationGetter dbEvaluationGetter;
 
-    @Override
-    public List<Monument> getMonuments(List<String> motClets) {
-        List<Monument> monuments = dbMonumentGetter.getMonuments();
-        List<Monument> filtredMonuments = new ArrayList<>();
-        for (Monument monument : monuments) {
-            for (String motCle : motClets) {
-                if ((monument.getNom() +" "+ monument.getDescription()).toLowerCase().contains(motCle.toLowerCase()) || monument.getVille().getNom().toLowerCase().equals(motCle.toLowerCase())) {
-                    filtredMonuments.add(getMonument(monument.getId()));
-                    break;
-                }
-            }
-        }
-        return filtredMonuments;
-    }
+    //@Override
+    //public List<Monument> getMonuments(List<String> motClets) {
+    //    List<Monument> monuments = dbMonumentGetter.getMonuments();
+    //    List<Monument> filtredMonuments = new ArrayList<>();
+    //    for (Monument monument : monuments) {
+    //        for (String motCle : motClets) {
+    //            if ((monument.getNom() +" "+ monument.getDescription()).toLowerCase().contains(motCle.toLowerCase()) || monument.getVille().getNom().toLowerCase().equals(motCle.toLowerCase())) {
+    //                filtredMonuments.add(getMonument(monument.getId()));
+    //                break;
+    //            }
+    //        }
+    //    }
+    //    return filtredMonuments;
+    //}
+
 
     // get the monument and get the evaluations
     @Override
@@ -86,6 +90,12 @@ public class ControlleurMonument implements IMonumentGetter, IEvaluationManager,
     @Override
     public void deleteMonument(String monumentId) {
         dbMonumentDeletter.deleteMonument(monumentId);
-    } 
-            
+    }
+
+    @Override
+    public List<Monument> getMonuments(List<String> motClets) {
+        if (motClets.size()==0) return dbMonumentGetter.getMonuments();
+        return dbMonumentFilter.getMonumentsByMotCle(motClets);
+    }
+
 }
