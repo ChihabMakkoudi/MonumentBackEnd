@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
-   <id>9803298</id>
-   <nom>Tramway Rabat-Sale</nom>
-   <description>Rabat 10000 Morocco</description>
+   <id>477266</id>
+   <nom>Mausoleum of Mohammad V</nom>
+   <description>Boulevard Abi Regreg, Rabat 10030 Morocco</description>
    <coordinate>
-      <latitude>34.005466</latitude>
-      <longitude>-6.814107</longitude>
+      <latitude>34.022766</latitude>
+      <longitude>-6.821399</longitude>
    </coordinate>
    <liensImage>
-      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0a/59/a5/8a/teto-do-tram.jpg</liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/06/13/e2/bb/mausoleo-de-mohamed-v.jpg</liensImage>
    </liensImage>
    <ville>
       <nom>Rabat</nom>

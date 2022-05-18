@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Monument">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:string" />
+                <xs:element name="nom" type="xs:string" />
+                <xs:element name="description" type="xs:string" />
+                <xs:element name="coordinate">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="latitude" type="xs:string" />
+                            <xs:element name="longitude" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="liensImage">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="liensImage" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ville">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom" type="xs:string" />
+                            <xs:element name="description" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="evaluations" />
+                <xs:element name="rating" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
