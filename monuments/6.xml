@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
-   <id>4043308</id>
+   <id>6</id>
    <nom>Museum Mohamed VI of Modern and Contemporary Art</nom>
    <description>Avenue Moulay Hassan, Rabat 10030 Morocco</description>
    <coordinate>

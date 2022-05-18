@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
-   <id>481103</id>
+   <id>7</id>
    <nom>Royal Palace of Rabat</nom>
    <description>Rabat Morocco</description>
    <coordinate>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
-   <id>480527</id>
+   <id>8</id>
    <nom>Rabat Old Town</nom>
    <description>Rabat Center, Rabat 10030 Morocco</description>
    <coordinate>
