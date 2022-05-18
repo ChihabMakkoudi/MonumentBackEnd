@@ -1,5 +1,7 @@
 package ma.ac.emi.MonumentBackEnd.APIControllerspackage;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,8 +37,12 @@ public class UserController {
 
         // if something missing Exception
         if (failedMonument(monument)) return "fail";
-
-
+        List<String> liensimage=new ArrayList<String>();
+        for(String s:monument.getLiensImage()){
+            if(!s.equals("")){
+                liensimage.add(s);
+        }}
+        monument.setLiensImage(liensimage);
         monument.setId(UUID.randomUUID().toString());
         monumentManager.addMonument(monument);
         return monument.getId();
