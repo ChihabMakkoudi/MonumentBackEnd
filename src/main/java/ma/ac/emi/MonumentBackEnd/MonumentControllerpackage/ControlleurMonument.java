@@ -36,7 +36,7 @@ public class ControlleurMonument implements IMonumentGetter, IEvaluationManager,
         List<Monument> filtredMonuments = new ArrayList<>();
         for (Monument monument : monuments) {
             for (String motCle : motClets) {
-                if ((monument.getNom() +" "+ monument.getDescription()).contains(motCle) || monument.getVille().getNom().toLowerCase().equals(motCle.toLowerCase())) {
+                if ((monument.getNom() +" "+ monument.getDescription()).toLowerCase().contains(motCle.toLowerCase()) || monument.getVille().getNom().toLowerCase().equals(motCle.toLowerCase())) {
                     filtredMonuments.add(getMonument(monument.getId()));
                     break;
                 }
