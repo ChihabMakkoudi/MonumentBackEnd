@@ -11,6 +11,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,6 +72,24 @@ public class MonumentDAO implements IDBMonumentGetter,IDBMonumentAdder,IDBMonume
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+            
+        try {
+        Path fileName
+            = Path.of(xmlFile.getAbsolutePath());
+        String str = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+        str+= "<Monument xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"../src/main/resources/templates/Monument.xsd\">"; 
+
+        str += Files.readString(fileName).substring(10);
+        Files.writeString(fileName, str,
+            StandardCharsets.UTF_8);
+
+
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+ 
        
         
     }
