@@ -31,6 +31,12 @@ public class UserController {
     @PostMapping("/monument/add")
     public String addMonument(/*@RequestHeader String token,*/ @RequestBody Monument monument) throws Exception {
         // if (!userChecker.checkUser(token)) throw new Exception("not user");
+
+
+        // if something missing Exception
+        if (failedMonument(monument)) return "fail";
+
+
         monument.setId(UUID.randomUUID().toString());
         monumentManager.addMonument(monument);
         return monument.getId();
@@ -40,6 +46,7 @@ public class UserController {
     @PostMapping("/monument/edit")
     public String editMonument(/*@RequestHeader String token,*/ @RequestBody Monument monument) throws Exception {
         // if (!userChecker.checkUser(token)) throw new Exception("not user");
+        if (failedMonument(monument)) return "fail";
         monumentManager.editMonument(monument.getId(),monument);
         return monument.getId();
     }
@@ -70,4 +77,15 @@ public class UserController {
         return arrOfStr[0];
     }
     
+    private Boolean failedMonument(Monument monument) {
+        System.out.println(monument.getVille().getNom());
+        System.out.println(monument.getCoordinate().getLatitude());
+        
+        Boolean failed =  monument.getNom().isBlank() || monument.getCoordinate().getLatitude()==0 
+                || monument.getCoordinate().getLongitude() == 0 
+                || monument.getLiensImage().get(0).isBlank();
+        System.out.println(failed);
+
+        return failed;
+    }
 }
