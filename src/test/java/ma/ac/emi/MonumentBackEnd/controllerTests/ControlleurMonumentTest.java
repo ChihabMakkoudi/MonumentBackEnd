@@ -18,7 +18,6 @@ import ma.ac.emi.MonumentBackEnd.Entities.Coordinate;
 import ma.ac.emi.MonumentBackEnd.Entities.Editeur;
 import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
-import ma.ac.emi.MonumentBackEnd.Entities.Ville;
 import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.ControlleurMonument;
 
 @SpringBootTest(classes = {ControlleurMonument.class, EvaluationDAO.class, MonumentDAO.class})

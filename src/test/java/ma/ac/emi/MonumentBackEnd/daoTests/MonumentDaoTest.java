@@ -5,12 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.core.exc.StreamWriteException;
 import com.fasterxml.jackson.databind.DatabindException;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +17,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import ma.ac.emi.MonumentBackEnd.DAO.MonumentDAO;
 import ma.ac.emi.MonumentBackEnd.Entities.Coordinate;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
-import ma.ac.emi.MonumentBackEnd.Entities.Ville;
 
 @SpringBootTest(classes = {MonumentDAO.class})
 public class MonumentDaoTest {

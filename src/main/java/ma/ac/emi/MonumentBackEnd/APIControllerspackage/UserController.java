@@ -87,7 +87,7 @@ public class UserController {
         System.out.println(monument.getVille().getNom());
         System.out.println(monument.getCoordinate().getLatitude());
         
-        Boolean failed =  monument.getNom().isBlank() || monument.getCoordinate().getLatitude()==0 
+        Boolean failed =  monument.getNom().isBlank() ||monument.getVille().getNom().isBlank()|| monument.getCoordinate().getLatitude()==0
                 || monument.getCoordinate().getLongitude() == 0 
                 || monument.getLiensImage().get(0).isBlank();
         System.out.println(failed);
