@@ -4,10 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import ma.ac.emi.MonumentBackEnd.APIControllerspackage.*;
+import ma.ac.emi.MonumentBackEnd.Entities.Editeur;
+import ma.ac.emi.MonumentBackEnd.Entities.Evaluation;
+import ma.ac.emi.MonumentBackEnd.Entities.Monument;
 import ma.ac.emi.MonumentBackEnd.Entities.Utilisateur;
+import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBEvaluationDeletter;
+import ma.ac.emi.MonumentBackEnd.MonumentControllerpackage.IDBEvaluationGetter;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConnectionController,IUserEditor,IUserDeletter {
@@ -17,10 +24,26 @@ public class ControlleurUtilisateur implements IUserChecker,IAdminChecker,IConne
     IDBUserGetter userGetter;
     @Autowired
     IDBUserDeletter userDeletter;
+    @Autowired
+    IEvaluationManager evaluationManager;
+    @Autowired
+    IMonumentGetter monumentGetter;
+    @Autowired
+    IDBEvaluationGetter dbEvaluationGetter;
+
 
     @Override
     public void deleteUtilisateur(String idUtilisateur) {
         userDeletter.deleteUtilisateur(idUtilisateur);
+
+        List<Evaluation> evaluations = dbEvaluationGetter.getEvaluations();
+        for (Evaluation evaluation : evaluations) {
+            if (evaluation.getEditeur().getId().equals(idUtilisateur)) {
+
+                evaluation.setEditeur(new Editeur(evaluation.getEditeur().getId(), "[Deleted]"));
+                evaluationManager.addEvaluation(evaluation, evaluation.getId().split("_")[0]);
+            }
+        }
     }
     @Override
     public void editUtilisateur(Utilisateur utilisateur) {

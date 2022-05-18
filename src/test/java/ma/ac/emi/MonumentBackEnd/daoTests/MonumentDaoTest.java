@@ -17,6 +17,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import ma.ac.emi.MonumentBackEnd.DAO.MonumentDAO;
 import ma.ac.emi.MonumentBackEnd.Entities.Coordinate;
 import ma.ac.emi.MonumentBackEnd.Entities.Monument;
+import ma.ac.emi.MonumentBackEnd.Entities.Ville;
 
 @SpringBootTest(classes = {MonumentDAO.class})
 public class MonumentDaoTest {
