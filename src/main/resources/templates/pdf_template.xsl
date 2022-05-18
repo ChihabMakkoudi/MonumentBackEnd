@@ -55,7 +55,7 @@
                             </fo:table-body>
                         </fo:table>
                     </fo:block> -->
-                    <fo:block font-size="30pt" font-weight="bold" text-decoration="underline">
+                    <fo:block text-align="center" font-size="30pt" font-weight="bold" text-decoration="underline">
                         <xsl:value-of select="nom"/>
                     </fo:block>
 
@@ -63,7 +63,7 @@
                         <fo:leader leader-pattern="space" leader-length="0pt"/>
                     </fo:block>
 
-                    <fo:block>
+                    <fo:block text-align="center">
                         <fo:external-graphic src="url('{liensImage/liensImage}')" content-height="scale-to-fit"  content-width="5.00in" />
                     </fo:block>
                     
