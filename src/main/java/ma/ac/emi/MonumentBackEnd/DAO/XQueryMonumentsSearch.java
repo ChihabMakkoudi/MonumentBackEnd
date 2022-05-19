@@ -36,7 +36,7 @@ public class XQueryMonumentsSearch implements IDBMonumentFilter{
         ArrayList<Monument> monuments = new ArrayList<>();
         for (File file: files) {
             for (String motcle: motcles) {
-                if (containsMotCle(file, motcle)) {
+                if (containsMotCle(file, motcle.toLowerCase())) {
                     id = file.getName().substring(0, file.getName().length()-4);
                     monuments.add(monumentDAO.getMonument(id));
                     break;
