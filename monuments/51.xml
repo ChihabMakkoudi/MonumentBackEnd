@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>51</id>
+   <nom>Aben Danan Synagogue</nom>
+   <description>Fes Morocco</description>
+   <coordinate>
+      <latitude>34.052677</latitude>
+      <longitude>-4.991926</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/13/d3/45/4e/interior-of-aben-danan.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

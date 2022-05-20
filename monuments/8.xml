@@ -2,19 +2,19 @@
 <Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
    <id>8</id>
-   <nom>Rabat Old Town</nom>
-   <description>Rabat Center, Rabat 10030 Morocco</description>
+   <nom>Erg Chebbi Dunes</nom>
+   <description>Morocco</description>
    <coordinate>
-      <latitude>33.98927</latitude>
-      <longitude>-6.85782</longitude>
+      <latitude>33.56628</latitude>
+      <longitude>-7.622608</longitude>
    </coordinate>
    <liensImage>
-      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/08/f1/7e/af/rabat-old-town.jpg</liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/08/8a/ba/moroccan-dors.jpg</liensImage>
    </liensImage>
    <ville>
-      <nom>Rabat</nom>
-      <description>Rabat</description>
+      <nom>None</nom>
+      <description>None</description>
    </ville>
    <evaluations/>
-   <rating>4.0</rating>
+   <rating>5.0</rating>
 </Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>173</id>
+   <nom>Meknes Museum</nom>
+   <description>Rue Driba El Hadim Square, Meknes 50000 Morocco</description>
+   <coordinate>
+      <latitude>33.89401</latitude>
+      <longitude>-5.56128</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-s/1c/64/dc/aa/meknes-museum.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Meknes</nom>
+      <description>Meknes</description>
+   </ville>
+   <evaluations/>
+   <rating>3.0</rating>
+</Monument>

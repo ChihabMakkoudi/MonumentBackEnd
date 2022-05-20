@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>277</id>
+   <nom>The Ethnographic Museum</nom>
+   <description>Avenue Skala Bab El Oukla, Tetouan Morocco</description>
+   <coordinate>
+      <latitude>35.593517</latitude>
+      <longitude>-5.365256</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0a/28/b3/c7/20160123-164056-largejpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tetouan</nom>
+      <description>Tetouan</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

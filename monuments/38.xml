@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>38</id>
+   <nom>Museo Nejjarine</nom>
+   <description>Pl. Nejjarine, Fes 30030 Morocco</description>
+   <coordinate>
+      <latitude>34.064777</latitude>
+      <longitude>-4.975962</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/04/07/c8/49/nejjarine-museum-of-wood.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>16</id>
+   <nom>Musee Abderrahman Slaoui</nom>
+   <description>12 Rue Du Parc, Casablanca 20070 Morocco</description>
+   <coordinate>
+      <latitude>33.5925</latitude>
+      <longitude>-7.622553</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/04/2b/f9/89/musee-abderrahman-slaoui.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

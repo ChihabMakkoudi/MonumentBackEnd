@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>96</id>
+   <nom>Jemaa el-Fnaa</nom>
+   <description>38 Jemaa el-Fna, Rue El Ksour, Marrakech Morocco</description>
+   <coordinate>
+      <latitude>31.62592</latitude>
+      <longitude>-7.989123</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/07/17/e4/bb/plaza-de-yamaa-el-fna.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

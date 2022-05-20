@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>216</id>
+   <nom>Agadir Kasbah</nom>
+   <description>Agadir 80100 Morocco</description>
+   <coordinate>
+      <latitude>30.429354</latitude>
+      <longitude>-9.624448</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0f/f2/64/dd/agadir-kasbah.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

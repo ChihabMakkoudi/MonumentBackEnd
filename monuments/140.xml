@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>140</id>
+   <nom>Mega Mall</nom>
+   <description>Avenue Mohammed VI, Rabat 10000 Morocco</description>
+   <coordinate>
+      <latitude>33.967808</latitude>
+      <longitude>-6.829851</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/11/44/a5/ee/img-20171113-193808-largejpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Rabat</nom>
+      <description>Rabat</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

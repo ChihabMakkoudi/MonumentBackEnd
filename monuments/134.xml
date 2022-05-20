@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>134</id>
+   <nom>Mawazine Festival</nom>
+   <description>Rabat Morocco</description>
+   <coordinate>
+      <latitude>33.992348</latitude>
+      <longitude>-6.835968</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0b/ee/54/fb/mawazine-festival.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Rabat</nom>
+      <description>Rabat</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

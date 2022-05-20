@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>137</id>
+   <nom>National Archaeology Museum</nom>
+   <description>23 Rue El Brihi, Rabat 10030 Morocco</description>
+   <coordinate>
+      <latitude>34.013824</latitude>
+      <longitude>-6.831558</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0f/85/ae/39/the-main-gallery.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Rabat</nom>
+      <description>Rabat</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

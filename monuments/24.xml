@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>24</id>
+   <nom>Villa des Arts de Casablanca</nom>
+   <description>30 Boulevard Brahim Roudani, Casablanca 20000 Morocco</description>
+   <coordinate>
+      <latitude>33.58619</latitude>
+      <longitude>-7.629347</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/13/83/c9/2c/view-of-museum-from-the.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

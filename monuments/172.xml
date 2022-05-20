@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>172</id>
+   <nom>The Royal Stables</nom>
+   <description>Zenkat Maarakat Lehri, Royal Palace Next To Bassin De L’Agdal And Hari Es Souani, Meknes 50000 Morocco</description>
+   <coordinate>
+      <latitude>33.87897</latitude>
+      <longitude>-5.558692</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-w/1c/19/c4/1c/area-das-cavalaricas.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Meknes</nom>
+      <description>Meknes</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>278</id>
+   <nom>Galerie d’Art</nom>
+   <description>Marj Khalal No 6 Wilaya Center, Tetouan 93000 Morocco</description>
+   <coordinate>
+      <latitude>35.585533</latitude>
+      <longitude>-5.341356</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/10/eb/68/d4/getlstd-property-photo.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tetouan</nom>
+      <description>Tetouan</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

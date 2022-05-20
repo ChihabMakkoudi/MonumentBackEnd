@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>116</id>
+   <nom>Menara Gardens and Pavilion</nom>
+   <description>Avenue de la Menara, Marrakech 40000 Morocco</description>
+   <coordinate>
+      <latitude>31.65051</latitude>
+      <longitude>-8.05414</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-w/0f/2c/7e/89/schone-spiegelungen.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>3.0</rating>
+</Monument>

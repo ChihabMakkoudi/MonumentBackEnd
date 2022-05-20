@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>366</id>
+   <nom>Grand Mosque</nom>
+   <description>Plaza Uta el-Hammam, Chefchaouen 91000 Morocco</description>
+   <coordinate>
+      <latitude>35.16738</latitude>
+      <longitude>-5.26185</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/11/4d/6c/05/img-20171116-145345-largejpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Chefchaouen</nom>
+      <description>Chefchaouen</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

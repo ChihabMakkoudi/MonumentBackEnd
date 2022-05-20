@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>146</id>
+   <nom>Russian Orthodox Church</nom>
+   <description>Place Bab Tamesna Angle avenue Hassan II et avenue Madagascar, Rabat 10050 Morocco</description>
+   <coordinate>
+      <latitude>34.0119</latitude>
+      <longitude>-6.852055</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/09/19/ae/db/russian-orthodox-church.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Rabat</nom>
+      <description>Rabat</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

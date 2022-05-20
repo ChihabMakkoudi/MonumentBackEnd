@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>70</id>
+   <nom>St. Andrew's Church</nom>
+   <description>Rue d'Angleterre 50, Tangier Morocco</description>
+   <coordinate>
+      <latitude>35.78237</latitude>
+      <longitude>-5.815739</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/08/a7/22/d4/st-andrew.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

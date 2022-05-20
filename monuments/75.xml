@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>75</id>
+   <nom>Tanger City Mall</nom>
+   <description>Place du Maghreb Arabe, Tangier 90000 Morocco</description>
+   <coordinate>
+      <latitude>35.76758</latitude>
+      <longitude>-5.81487</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0b/36/43/a9/megarama-cinema.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

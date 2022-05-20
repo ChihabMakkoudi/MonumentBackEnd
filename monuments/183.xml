@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>183</id>
+   <nom>Rokya Aquaparc</nom>
+   <description>5 Route Meknes Commune Al Arjate, Sale 11000 Morocco</description>
+   <coordinate>
+      <latitude>34.26366</latitude>
+      <longitude>-6.572868</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/14/48/4b/30/rokya-aquaparc.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Sale</nom>
+      <description>Sale</description>
+   </ville>
+   <evaluations/>
+   <rating>3.0</rating>
+</Monument>

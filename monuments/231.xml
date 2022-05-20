@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>231</id>
+   <nom>Festival Timitar</nom>
+   <description>Various Music theatre in Morocco, Agadir Morocco</description>
+   <coordinate>
+      <latitude>30.42146</latitude>
+      <longitude>-9.60466</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0b/49/73/be/fb-img-1463423946351.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

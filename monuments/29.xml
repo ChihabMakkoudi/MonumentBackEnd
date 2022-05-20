@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>29</id>
+   <nom>Tahiti Beach Club</nom>
+   <description>Boulevard de la Corniche, Casablanca 20050 Morocco</description>
+   <coordinate>
+      <latitude>33.60576</latitude>
+      <longitude>-7.6487</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/18/0d/5f/c4/photo4jpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
+   </ville>
+   <evaluations/>
+   <rating>2.5</rating>
+</Monument>

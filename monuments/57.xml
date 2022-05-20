@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>57</id>
+   <nom>Cherratin Medersa</nom>
+   <description>Derb Zaouia, Fes 30030 Morocco</description>
+   <coordinate>
+      <latitude>34.0561</latitude>
+      <longitude>-4.98973</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/09/e4/b4/cb/cherratin-medersa.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

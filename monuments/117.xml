@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>117</id>
+   <nom>Mellah</nom>
+   <description>Marrakech Morocco</description>
+   <coordinate>
+      <latitude>31.619566</latitude>
+      <longitude>-7.982503</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0f/11/05/8f/auf-dem-sehr-grossen.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

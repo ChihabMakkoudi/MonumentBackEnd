@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>42</id>
+   <nom>Glaoui Palace</nom>
+   <description>1 Rue Hamia Douh, Fes 40000 Morocco</description>
+   <coordinate>
+      <latitude>34.06951</latitude>
+      <longitude>-4.9862</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/04/d1/c8/f8/glaoui-palace-fez.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

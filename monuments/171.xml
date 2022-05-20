@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>171</id>
+   <nom>Bab Berdaine Mosque</nom>
+   <description>Meknes Morocco</description>
+   <coordinate>
+      <latitude>33.899815</latitude>
+      <longitude>-5.567772</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/1b/4e/6a/1d/photo1jpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Meknes</nom>
+      <description>Meknes</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

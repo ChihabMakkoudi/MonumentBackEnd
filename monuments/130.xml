@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>130</id>
+   <nom>Andalusian Gardens</nom>
+   <description>Avenue Al Marsa, Rabat 10030 Morocco</description>
+   <coordinate>
+      <latitude>34.03004</latitude>
+      <longitude>-6.835351</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/11/ec/7f/0a/img-20180127-123427681.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Rabat</nom>
+      <description>Rabat</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>87</id>
+   <nom>Gran Teatro Cervantes</nom>
+   <description>Rue Anoual, Tangier Morocco</description>
+   <coordinate>
+      <latitude>35.78247</latitude>
+      <longitude>-5.81041</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/11/d3/0c/a3/grand-theatre-cervantes.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

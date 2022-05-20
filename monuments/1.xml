@@ -2,18 +2,18 @@
 <Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
    <id>1</id>
-   <nom>Mausoleum of Mohammad V</nom>
-   <description>Boulevard Abi Regreg, Rabat 10030 Morocco</description>
+   <nom>Hassan II Mosque</nom>
+   <description>Blvd Sidi Mohammed Ben Abdallah, Casablanca 20450 Morocco</description>
    <coordinate>
-      <latitude>34.022766</latitude>
-      <longitude>-6.821399</longitude>
+      <latitude>33.60783</latitude>
+      <longitude>-7.632691</longitude>
    </coordinate>
    <liensImage>
-      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/06/13/e2/bb/mausoleo-de-mohamed-v.jpg</liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/16/9b/8b/36/photo0jpg.jpg</liensImage>
    </liensImage>
    <ville>
-      <nom>Rabat</nom>
-      <description>Rabat</description>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
    </ville>
    <evaluations/>
    <rating>4.5</rating>

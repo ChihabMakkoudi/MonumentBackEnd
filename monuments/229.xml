@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>229</id>
+   <nom>Jardin de Olhao</nom>
+   <description>Agadir 80000 Morocco</description>
+   <coordinate>
+      <latitude>30.424885</latitude>
+      <longitude>-9.597641</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/17/16/ff/99/nadhera.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

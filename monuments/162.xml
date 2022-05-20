@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>162</id>
+   <nom>Viagemmarrocos - Day Tours</nom>
+   <description>Boulevard de la Corniche, Casablanca 20430 Morocco</description>
+   <coordinate>
+      <latitude>33.884174</latitude>
+      <longitude>-5.571194</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/1b/2a/81/f6/em-viagem.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

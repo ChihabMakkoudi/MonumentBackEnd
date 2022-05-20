@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>122</id>
+   <nom>Kasbah des Oudaias</nom>
+   <description>off Rue des Consuls, Rabat 10030 Morocco</description>
+   <coordinate>
+      <latitude>34.0316</latitude>
+      <longitude>-6.835571</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/09/53/1b/b7/kasbah-des-oudaias.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Rabat</nom>
+      <description>Rabat</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

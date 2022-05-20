@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>108</id>
+   <nom>Ksar of Ait-Ben-Haddou</nom>
+   <description>Ait Ben Haddou 45122 Morocco</description>
+   <coordinate>
+      <latitude>31.590612</latitude>
+      <longitude>-8.057364</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/15/bf/52/9e/kasbah-river-and-palms.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Ait Ben Haddou</nom>
+      <description>Ait Ben Haddou</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

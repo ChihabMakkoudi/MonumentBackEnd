@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>220</id>
+   <nom>La Grande Roue Agadir</nom>
+   <description>Boulevard du 20 Aout Front de mer, Agadir 80000 Morocco</description>
+   <coordinate>
+      <latitude>30.41782</latitude>
+      <longitude>-9.60371</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/fe/cc/40/caption.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

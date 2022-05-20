@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>233</id>
+   <nom>Sun Academie</nom>
+   <description>Immeuble Hotel Sud Bahia Avenue General Kettani, Agadir 80000 Morocco</description>
+   <coordinate>
+      <latitude>30.42469</latitude>
+      <longitude>-9.60172</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/07/5d/b1/64/practice-sans-fin.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

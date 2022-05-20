@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>89</id>
+   <nom>Fondation Lorin</nom>
+   <description>Rue Abdallah Ben Hachimi 44, Tangier Morocco</description>
+   <coordinate>
+      <latitude>35.78403</latitude>
+      <longitude>-5.81133</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0d/7f/e9/1e/fondation-lorin.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

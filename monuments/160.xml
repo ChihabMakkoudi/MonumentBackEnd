@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>160</id>
+   <nom>Dar Jamai Museum</nom>
+   <description>Sahat El Hadim, Meknes Morocco</description>
+   <coordinate>
+      <latitude>33.893745</latitude>
+      <longitude>-5.566563</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/05/74/03/e9/dar-jamai-museum.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Meknes</nom>
+      <description>Meknes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>118</id>
+   <nom>Tanneries</nom>
+   <description>outside Bab Debbagh, Marrakech Morocco</description>
+   <coordinate>
+      <latitude>31.65051</latitude>
+      <longitude>-8.05414</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0e/57/3b/d5/tanneries.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>2.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>10</id>
+   <nom>Notre Dame de Lourdes</nom>
+   <description>Rond-Point d'Europe, Casablanca 20500 Morocco</description>
+   <coordinate>
+      <latitude>33.58318</latitude>
+      <longitude>-7.61491</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/04/ab/c0/bb/notre-dame-de-lourdes.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

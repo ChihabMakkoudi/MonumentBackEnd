@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>99</id>
+   <nom>Dar El Bacha - Musee des Confluences</nom>
+   <description>65, 69 Riad Laarous, route Dar El Bacha, Marrakech 40000 Morocco</description>
+   <coordinate>
+      <latitude>31.631084</latitude>
+      <longitude>-7.99254</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/17/19/e4/ef/museum-of-confluences.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

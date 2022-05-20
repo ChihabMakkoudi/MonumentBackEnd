@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>83</id>
+   <nom>Tanjazz</nom>
+   <description>Tangier Morocco</description>
+   <coordinate>
+      <latitude>35.78743</latitude>
+      <longitude>-5.811543</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/10/b0/60/0f/tanjazz.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

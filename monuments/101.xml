@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>101</id>
+   <nom>El Badi Palace</nom>
+   <description>Ksibat Nhass, Marrakech Morocco</description>
+   <coordinate>
+      <latitude>31.61879</latitude>
+      <longitude>-7.985554</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/51/9d/7c/weiter-blick.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

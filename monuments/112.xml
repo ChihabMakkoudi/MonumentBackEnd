@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>112</id>
+   <nom>Menara Mall</nom>
+   <description>Avenue Mohammed VI, Marrakech 40020 Morocco</description>
+   <coordinate>
+      <latitude>31.618593</latitude>
+      <longitude>-8.009197</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/09/7e/86/c9/menara-mall.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

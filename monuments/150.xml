@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>150</id>
+   <nom>Espace Expressions CDG</nom>
+   <description>Avenue Moulay Hassan Entrance below on the Square, Rabat Morocco</description>
+   <coordinate>
+      <latitude>34.01449</latitude>
+      <longitude>-6.83337</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/53/ab/28/some-art-on-display-also.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Rabat</nom>
+      <description>Rabat</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

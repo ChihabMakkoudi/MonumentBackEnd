@@ -2,19 +2,19 @@
 <Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
    <id>5</id>
-   <nom>Tramway Rabat-Sale</nom>
-   <description>Rabat 10000 Morocco</description>
+   <nom>Old Medina of Casablanca</nom>
+   <description>Place Marishal North-west corner of Place des Nations Unies, Casablanca 20200 Morocco</description>
    <coordinate>
-      <latitude>34.005466</latitude>
-      <longitude>-6.814107</longitude>
+      <latitude>33.59621</latitude>
+      <longitude>-7.617</longitude>
    </coordinate>
    <liensImage>
-      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0a/59/a5/8a/teto-do-tram.jpg</liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/01/33/38/00/l-ancienne-medina.jpg</liensImage>
    </liensImage>
    <ville>
-      <nom>Rabat</nom>
-      <description>Rabat</description>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
    </ville>
    <evaluations/>
-   <rating>4.5</rating>
+   <rating>3.5</rating>
 </Monument>

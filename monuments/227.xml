@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>227</id>
+   <nom>Accrobranche Souss Park</nom>
+   <description>Agadir 800090 Morocco</description>
+   <coordinate>
+      <latitude>30.364765</latitude>
+      <longitude>-9.569139</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/08/79/58/54/accrobranche-souss-park.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

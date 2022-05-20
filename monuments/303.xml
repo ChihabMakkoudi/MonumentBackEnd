@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>303</id>
+   <nom>Laayoune Off Road</nom>
+   <description>Akhfennir Centre Akhfennir, Laayoune 70072 Morocco</description>
+   <coordinate>
+      <latitude>27.14855</latitude>
+      <longitude>-13.1963</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/03/61/79/e8/getlstd-property-photo.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Laayoune</nom>
+      <description>Laayoune</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

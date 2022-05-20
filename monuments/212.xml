@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>212</id>
+   <nom>Crocoparc</nom>
+   <description>8 Route National Rn8 - Pk16, Agadir 80040 Morocco</description>
+   <coordinate>
+      <latitude>30.39076</latitude>
+      <longitude>-9.485559</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0e/27/36/a4/crocparc-2017.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

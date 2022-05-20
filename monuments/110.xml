@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>110</id>
+   <nom>Boucharouite Museum</nom>
+   <description>Azbezt 107, Derb El Cadi En face de la Mosquee d’ Azbezt/ In front of Azbezt Mosque, Marrakech 40000 Morocco</description>
+   <coordinate>
+      <latitude>31.629095</latitude>
+      <longitude>-7.984197</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0d/e7/62/62/boucharouite-museum.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

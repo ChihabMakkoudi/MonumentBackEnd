@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>230</id>
+   <nom>Atlantic Palace Casino</nom>
+   <description>Agadir 80000 Morocco</description>
+   <coordinate>
+      <latitude>30.405</latitude>
+      <longitude>-9.595694</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/08/c3/7c/c4/atlantic-palace-casino.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

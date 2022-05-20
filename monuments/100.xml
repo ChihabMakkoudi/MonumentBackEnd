@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>100</id>
+   <nom>Dar Si Said Museum</nom>
+   <description>8 Rue de la Bahia, Marrakech 40000 Morocco</description>
+   <coordinate>
+      <latitude>31.623459</latitude>
+      <longitude>-7.983915</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/03/47/94/95/museo-di-arte-marocchina.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

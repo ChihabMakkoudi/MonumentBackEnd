@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>181</id>
+   <nom>Sale Medersa</nom>
+   <description>Rue Aqba El Medersa, Sale 11030 Morocco</description>
+   <coordinate>
+      <latitude>34.26622</latitude>
+      <longitude>-6.57407</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/05/ab/3c/52/sale-medersa.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Sale</nom>
+      <description>Sale</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

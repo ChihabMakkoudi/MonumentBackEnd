@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>165</id>
+   <nom>Skala Du Port</nom>
+   <description>Avenue Muhammad V Facing The Ocean, Essaouira 44000 Morocco</description>
+   <coordinate>
+      <latitude>33.86839</latitude>
+      <longitude>-5.5773</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-w/1c/81/5e/5e/skala-du-port.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Essaouira</nom>
+      <description>Essaouira</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

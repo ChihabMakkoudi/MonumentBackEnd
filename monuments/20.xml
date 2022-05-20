@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>20</id>
+   <nom>New Medina of Casablanca</nom>
+   <description>Blvd Victor Hugo, Casablanca Morocco</description>
+   <coordinate>
+      <latitude>33.57842</latitude>
+      <longitude>-7.61243</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/01/36/a2/3b/l-ancien-restaurant-rich.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

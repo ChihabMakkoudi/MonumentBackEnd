@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>335</id>
+   <nom>Quads Dakhla Truk Aventure</nom>
+   <description>Km 26 next to the police station, Dakhla Morocco</description>
+   <coordinate>
+      <latitude>23.748552</latitude>
+      <longitude>-15.909441</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0c/43/7d/f8/getlstd-property-photo.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Dakhla</nom>
+      <description>Dakhla</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

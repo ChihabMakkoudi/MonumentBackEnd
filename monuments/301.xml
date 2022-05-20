@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>301</id>
+   <nom>St. Francis of Assisi Cathedral</nom>
+   <description>Laayoune Morocco</description>
+   <coordinate>
+      <latitude>27.163225</latitude>
+      <longitude>-13.205572</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-c/2560x500/0f/7a/30/76/iglesia-catolica-de-el.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Laayoune</nom>
+      <description>Laayoune</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

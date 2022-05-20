@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>64</id>
+   <nom>Tangier American Legation Museum</nom>
+   <description>__8 Rue d'Amerique, Tangier 90000 Morocco</description>
+   <coordinate>
+      <latitude>35.7837</latitude>
+      <longitude>-5.810797</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/67/8f/47/american-legation-another.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

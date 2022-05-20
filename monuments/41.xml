@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>41</id>
+   <nom>Royal Palace of Fez</nom>
+   <description>Avenue Omar Ibnou Khattab, Fes 30004 Morocco</description>
+   <coordinate>
+      <latitude>34.0175</latitude>
+      <longitude>-5.05028</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/13/77/d4/02/20180619-173204-largejpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

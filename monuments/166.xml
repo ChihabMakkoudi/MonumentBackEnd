@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>166</id>
+   <nom>Great Mosque of Meknes</nom>
+   <description>Rue Kissaria Near Medressah Bou Inania, Meknes 50000 Morocco</description>
+   <coordinate>
+      <latitude>33.89516</latitude>
+      <longitude>-5.565297</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/7e/5d/89/stucco.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Meknes</nom>
+      <description>Meknes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

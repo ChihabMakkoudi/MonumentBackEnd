@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>144</id>
+   <nom>Bouregreg Marina</nom>
+   <description>Av. Fes. Rmel, Sale Morocco</description>
+   <coordinate>
+      <latitude>34.03139</latitude>
+      <longitude>-6.82244</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/16/50/2f/eb/la-kasbah-des-oudayas.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Sale</nom>
+      <description>Sale</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

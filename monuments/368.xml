@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>368</id>
+   <nom>Chefchaouen Bleu City By Guide</nom>
+   <description>Route Ras El Maa Quarter Sebanine 22, Chefchaouen 91000 Morocco</description>
+   <coordinate>
+      <latitude>35.16576</latitude>
+      <longitude>-5.262748</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/23/38/fe/29/park-national-telesmtan.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Chefchaouen</nom>
+      <description>Chefchaouen</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

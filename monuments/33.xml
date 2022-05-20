@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>33</id>
+   <nom>Fes el-Bali</nom>
+   <description>Fes 30110 Morocco</description>
+   <coordinate>
+      <latitude>34.0662</latitude>
+      <longitude>-4.970612</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/07/09/8e/51/fes-el-bali.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

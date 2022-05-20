@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>18</id>
+   <nom>Anfaplace Shopping Center</nom>
+   <description>Boulevard De La Corniche, Casablanca Morocco</description>
+   <coordinate>
+      <latitude>33.59836</latitude>
+      <longitude>-7.664714</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/8b/1f/e3/anfaplace-mall.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

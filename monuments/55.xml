@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>55</id>
+   <nom>Fes el-Jdid</nom>
+   <description>Fes Morocco</description>
+   <coordinate>
+      <latitude>34.05308</latitude>
+      <longitude>-4.993642</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/91/d6/b8/todas-as-sete-portas.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

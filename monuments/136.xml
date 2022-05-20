@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>136</id>
+   <nom>Valley of the Roses</nom>
+   <description>Dades Valley near Bouteghrar, El Kelaa M'gouna 43000 Morocco</description>
+   <coordinate>
+      <latitude>34.00061</latitude>
+      <longitude>-6.84494</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0e/e3/93/b3/vista-lateral.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>El Kelaa M'gouna</nom>
+      <description>El Kelaa M'gouna</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>11</id>
+   <nom>Museum of Moroccan Judaism</nom>
+   <description>81, Rue Chasseur Jules Gros Near the Oasis Station, Casablanca Morocco</description>
+   <coordinate>
+      <latitude>33.552208</latitude>
+      <longitude>-7.639067</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-w/12/f8/e4/02/caption.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

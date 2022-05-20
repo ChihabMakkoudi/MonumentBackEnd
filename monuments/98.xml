@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>98</id>
+   <nom>Koutoubia Mosque</nom>
+   <description>Rue el Ksour, Derb Sabai, 13, Marrakech 40000 Morocco</description>
+   <coordinate>
+      <latitude>31.623808</latitude>
+      <longitude>-7.993608</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/11/f0/c1/36/mezquita-y-minarete-kutubia.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

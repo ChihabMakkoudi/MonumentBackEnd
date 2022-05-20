@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>283</id>
+   <nom>Marrakech Viajes del desierto baratos a Marruecos</nom>
+   <description>Avenue Al joulane , app 15, Tetouan 27000 Morocco</description>
+   <coordinate>
+      <latitude>35.58402</latitude>
+      <longitude>-5.342247</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/1b/3a/09/ec/marruecos-baratos-viajes.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tetouan</nom>
+      <description>Tetouan</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

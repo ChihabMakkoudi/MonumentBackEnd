@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>61</id>
+   <nom>Hercules Cave</nom>
+   <description>Cap Spartel, Tangier 90060 Morocco</description>
+   <coordinate>
+      <latitude>35.759933</latitude>
+      <longitude>-5.939232</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/16/d5/91/d7/20190315-133152-largejpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

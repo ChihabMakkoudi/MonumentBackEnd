@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>69</id>
+   <nom>Moshe Nahon Synagogue</nom>
+   <description>Rue Cheikh al Harrak, Tangier Morocco</description>
+   <coordinate>
+      <latitude>35.785015</latitude>
+      <longitude>-5.811766</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/7b/65/f8/img-20180325-130424-largejpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

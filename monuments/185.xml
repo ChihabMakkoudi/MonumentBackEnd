@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>185</id>
+   <nom>Jimmy's Fitness Center</nom>
+   <description>38 Avenue Hassan Ii Résidence « Royale »,, Kenitra 14000 Morocco</description>
+   <coordinate>
+      <latitude>34.259106</latitude>
+      <longitude>-6.580966</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/1d/71/47/5d/accueil.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Kenitra</nom>
+      <description>Kenitra</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

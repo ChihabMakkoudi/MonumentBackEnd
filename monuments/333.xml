@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>333</id>
+   <nom>White Dune Kiting</nom>
+   <description>Kassam 1 Kite House Dakhla, Dakhla 73000 Morocco</description>
+   <coordinate>
+      <latitude>23.735128</latitude>
+      <longitude>-15.914187</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/ba/7e/e1/join-our-team-of-iko.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Dakhla</nom>
+      <description>Dakhla</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

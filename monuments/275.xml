@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>275</id>
+   <nom>Jewish cemetery of Tetouan</nom>
+   <description>Avenue Homane Al Fatouaki, Tetouan Morocco</description>
+   <coordinate>
+      <latitude>35.576958</latitude>
+      <longitude>-5.367125</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/15/00/0a/63/jewish-cemetery-of-tetouan.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tetouan</nom>
+      <description>Tetouan</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

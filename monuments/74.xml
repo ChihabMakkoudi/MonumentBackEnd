@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>74</id>
+   <nom>Socco Alto</nom>
+   <description>Route de Boubana, Tangier 90040 Morocco</description>
+   <coordinate>
+      <latitude>35.78001</latitude>
+      <longitude>-5.84086</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0c/34/8b/f6/vue-exterieure.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

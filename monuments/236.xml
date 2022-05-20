@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>236</id>
+   <nom>Fabrica de alfombras artesanales</nom>
+   <description>Douar Ihrtan, Tinerhir Morocco</description>
+   <coordinate>
+      <latitude>30.3907</latitude>
+      <longitude>-9.52142</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-w/1a/12/e1/98/tapis-berbere.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tinerhir</nom>
+      <description>Tinerhir</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

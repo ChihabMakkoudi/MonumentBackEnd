@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>131</id>
+   <nom>Musee De l'Abeille Vivante</nom>
+   <description>34 Bis Complexe Artisanal El Oulja Vallee Du Bouregreg, Sale 11000 Morocco</description>
+   <coordinate>
+      <latitude>34.021645</latitude>
+      <longitude>-6.800432</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/16/6b/b8/a3/20190209-113829-largejpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Sale</nom>
+      <description>Sale</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

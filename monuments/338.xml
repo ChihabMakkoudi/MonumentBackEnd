@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>338</id>
+   <nom>The Palais Rhoul &amp; Spa</nom>
+   <description>Boulevard Mohammed V 100 Le Palais Rhoul &amp; Spa, Dakhla 73000 Morocco</description>
+   <coordinate>
+      <latitude>23.694908</latitude>
+      <longitude>-15.932541</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/1b/dc/38/23/bain-de-vapeur.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Dakhla</nom>
+      <description>Dakhla</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>129</id>
+   <nom>Jardin Zoologique de Rabat</nom>
+   <description>Annexe 23eme, Cite Yacoub El Mansour, Rabat 12000 Morocco</description>
+   <coordinate>
+      <latitude>33.951614</latitude>
+      <longitude>-6.900682</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/13/c5/31/e2/nos-animaux-font-des.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Rabat</nom>
+      <description>Rabat</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

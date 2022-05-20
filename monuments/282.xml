@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>282</id>
+   <nom>Hammam Torgan Hommes</nom>
+   <description>Hjar Laaroussa N20 Route De Sebta Pres De Hotel, Tetouan 93000 Morocco</description>
+   <coordinate>
+      <latitude>35.565826</latitude>
+      <longitude>-5.360555</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/1d/81/9a/6c/caption.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tetouan</nom>
+      <description>Tetouan</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

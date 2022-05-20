@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>60</id>
+   <nom>La Belle Vue de la Tannerie</nom>
+   <description>64 Derb Sidi Bouaza, Fes Morocco</description>
+   <coordinate>
+      <latitude>34.06676</latitude>
+      <longitude>-4.97104</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/1b/5e/dd/82/la-belle-vue-de-la-tannerie.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>332</id>
+   <nom>Dakhla Rovers</nom>
+   <description>Dakhla 73000 Morocco</description>
+   <coordinate>
+      <latitude>23.733355</latitude>
+      <longitude>-15.917719</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/11/68/4f/e0/roaming-around-te-dunes.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Dakhla</nom>
+      <description>Dakhla</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

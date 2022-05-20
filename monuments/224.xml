@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>224</id>
+   <nom>Agadir Fishing Port</nom>
+   <description>Avenue du Port, Agadir Morocco</description>
+   <coordinate>
+      <latitude>30.41293</latitude>
+      <longitude>-9.56594</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0a/0e/da/46/agadir-fishing-port.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

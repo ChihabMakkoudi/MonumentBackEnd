@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>88</id>
+   <nom>Traditional Art Gallery</nom>
+   <description>79, Rue Nassiria, Tangier 90.000 Morocco</description>
+   <coordinate>
+      <latitude>35.786255</latitude>
+      <longitude>-5.812135</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0c/50/77/46/20160704-140240-largejpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

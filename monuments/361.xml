@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>361</id>
+   <nom>Chefchaouen Medina</nom>
+   <description>Chefchaouen Morocco</description>
+   <coordinate>
+      <latitude>35.170475</latitude>
+      <longitude>-5.258938</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/11/d9/ac/8c/fb-img-1516692241536.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Chefchaouen</nom>
+      <description>Chefchaouen</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

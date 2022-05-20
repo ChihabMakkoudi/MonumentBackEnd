@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>218</id>
+   <nom>Agadir Oufella Ruins</nom>
+   <description>Oufella, Agadir Morocco</description>
+   <coordinate>
+      <latitude>30.41971</latitude>
+      <longitude>-9.5558</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/08/fe/f1/49/oufella-ruins-ou-la-kasbah.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

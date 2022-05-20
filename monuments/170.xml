@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>170</id>
+   <nom>Borj Belkari Tower</nom>
+   <description>Avenue Mohamed VI Opposite Ensemble Artisanal, Meknes 50000 Morocco</description>
+   <coordinate>
+      <latitude>33.88925</latitude>
+      <longitude>-5.56689</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/1b/4f/38/5c/photo0jpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Meknes</nom>
+      <description>Meknes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

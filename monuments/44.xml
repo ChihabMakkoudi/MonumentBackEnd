@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>44</id>
+   <nom>Tombe dei Merenidi</nom>
+   <description>Nella Zona a Nord della Medina, Fes 30030 Morocco</description>
+   <coordinate>
+      <latitude>34.069695</latitude>
+      <longitude>-4.979461</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/08/e0/d5/0b/tombe-dei-merenidi.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

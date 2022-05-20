@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>39</id>
+   <nom>Kairaouine Mosque (Mosque of al-Qarawiyyin)</nom>
+   <description>Fes el-Bali Qayruwan quarters, Fes 30030 Morocco</description>
+   <coordinate>
+      <latitude>34.064938</latitude>
+      <longitude>-4.973366</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/16/47/5a/8f/photo1jpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

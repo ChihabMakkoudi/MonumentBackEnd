@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>56</id>
+   <nom>Fes Mosaic &amp; Potery</nom>
+   <description>16 Ain Noqbi, Fes 30000 Morocco</description>
+   <coordinate>
+      <latitude>34.062706</latitude>
+      <longitude>-4.959398</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/9b/3c/e4/pottery-and-tables.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>34</id>
+   <nom>Bou Inania Medersa</nom>
+   <description>Rue Talaa Sghira, Fes 30110 Morocco</description>
+   <coordinate>
+      <latitude>34.062157</latitude>
+      <longitude>-4.982738</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/06/3e/ab/47/caption.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>4.5</rating>
+</Monument>

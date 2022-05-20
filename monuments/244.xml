@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>244</id>
+   <nom>Oujda fitness</nom>
+   <description>Angle rue Imam Malik et rue Koweit, Oujda 60000 Morocco</description>
+   <coordinate>
+      <latitude>34.67662</latitude>
+      <longitude>-1.91077</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/1c/4f/8a/oujda-fitness-a-pour.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Oujda</nom>
+      <description>Oujda</description>
+   </ville>
+   <evaluations/>
+   <rating>3.0</rating>
+</Monument>

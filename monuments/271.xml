@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>271</id>
+   <nom>Medina of Tetouan</nom>
+   <description>Tetouan Morocco</description>
+   <coordinate>
+      <latitude>35.58817</latitude>
+      <longitude>-5.362774</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/60/bc/11/cartoline-da-tetouan.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tetouan</nom>
+      <description>Tetouan</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

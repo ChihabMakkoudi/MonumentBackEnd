@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>367</id>
+   <nom>Chefchaouen Cemetery</nom>
+   <description>Avenue Melilla corner Avenue Ras Elma, Chefchaouen 91000 Morocco</description>
+   <coordinate>
+      <latitude>35.15858</latitude>
+      <longitude>-5.26145</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/17/39/41/9a/jewish-cemetery-of-chefchaouen.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Chefchaouen</nom>
+      <description>Chefchaouen</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

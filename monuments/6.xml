@@ -2,18 +2,18 @@
 <Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
    <id>6</id>
-   <nom>Museum Mohamed VI of Modern and Contemporary Art</nom>
-   <description>Avenue Moulay Hassan, Rabat 10030 Morocco</description>
+   <nom>Casa Tramway</nom>
+   <description>Casablanca Morocco</description>
    <coordinate>
-      <latitude>34.01518</latitude>
-      <longitude>-6.833171</longitude>
+      <latitude>33.542053</latitude>
+      <longitude>-7.650933</longitude>
    </coordinate>
    <liensImage>
-      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0a/04/67/d3/museum-mohamed-vi-of.jpg</liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/15/85/40/99/tram-at-casa-voyageurs.jpg</liensImage>
    </liensImage>
    <ville>
-      <nom>Rabat</nom>
-      <description>Rabat</description>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
    </ville>
    <evaluations/>
    <rating>4.5</rating>

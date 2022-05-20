@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>17</id>
+   <nom>Parc de Jeux Sindibad</nom>
+   <description>angle BD de l'océan atlantique et boulevard du golfe arabique, Casablanca 20000 Morocco</description>
+   <coordinate>
+      <latitude>33.581913</latitude>
+      <longitude>-7.687989</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0c/c1/4c/22/une-glissade-en-famille.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Casablanca</nom>
+      <description>Casablanca</description>
+   </ville>
+   <evaluations/>
+   <rating>3.0</rating>
+</Monument>

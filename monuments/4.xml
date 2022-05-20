@@ -2,19 +2,19 @@
 <Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
    <id>4</id>
-   <nom>Hassan Tower</nom>
-   <description>Boulevard Mohamed Lyazidi, Rabat 10030 Morocco</description>
+   <nom>Ben Youssef Mosque</nom>
+   <description>Marrakech 40000 Morocco</description>
    <coordinate>
-      <latitude>34.024136</latitude>
-      <longitude>-6.822816</longitude>
+      <latitude>33.58966</latitude>
+      <longitude>-7.541314</longitude>
    </coordinate>
    <liensImage>
-      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/01/24/77/d3/the-tour-hassan-or-hassan.jpg</liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/9b/c6/2a/ali-ben-youssef-mosque.jpg</liensImage>
    </liensImage>
    <ville>
-      <nom>Rabat</nom>
-      <description>Rabat</description>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
    </ville>
    <evaluations/>
-   <rating>4.0</rating>
+   <rating>3.5</rating>
 </Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>80</id>
+   <nom>Tumbas Fenicias</nom>
+   <description>Avenue Hadj Mohamed Tazi, Tangier Morocco</description>
+   <coordinate>
+      <latitude>35.790825</latitude>
+      <longitude>-5.820158</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0e/4f/fb/94/phoenician-tombs-tanger.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

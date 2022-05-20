@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>76</id>
+   <nom>Bleu de Fes</nom>
+   <description>65 Rue Les Almohades Ancien Medina Petit Socco, Tangier 90030 Morocco</description>
+   <coordinate>
+      <latitude>35.78672</latitude>
+      <longitude>-5.810847</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/12/fc/40/3d/bleudefescom.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

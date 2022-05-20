@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>219</id>
+   <nom>La Nouvelle Medina Polizzi</nom>
+   <description>B.P. 230 Bensergao, Agadir 80007 Morocco</description>
+   <coordinate>
+      <latitude>30.378448</latitude>
+      <longitude>-9.572356</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0c/1e/30/39/medina.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

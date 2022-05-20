@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>62</id>
+   <nom>Cap Spartel</nom>
+   <description>14km west of Tangier, Tangier Morocco</description>
+   <coordinate>
+      <latitude>35.7901</latitude>
+      <longitude>-5.924139</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/17/94/e4/e7/20190519-104409-largejpg.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tangier</nom>
+      <description>Tangier</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>119</id>
+   <nom>La Palmeraie</nom>
+   <description>Marrakech Morocco</description>
+   <coordinate>
+      <latitude>31.66291</latitude>
+      <longitude>-7.969036</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-s/00/1c/93/d2/bougainvillea-adorning.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>3.0</rating>
+</Monument>

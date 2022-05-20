@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>138</id>
+   <nom>Cathedrale Saint-Pierre</nom>
+   <description>Place du Golan, Rabat 10000 Morocco</description>
+   <coordinate>
+      <latitude>33.99022</latitude>
+      <longitude>-6.81945</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0a/14/11/1c/cathedrale-saint-pierre.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Rabat</nom>
+      <description>Rabat</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

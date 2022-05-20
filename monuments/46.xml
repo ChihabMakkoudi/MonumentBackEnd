@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>46</id>
+   <nom>Pure Maroc Journey Design</nom>
+   <description>Tala'akbira 39 Fes Morocco, Fes 30000 Morocco</description>
+   <coordinate>
+      <latitude>34.060658</latitude>
+      <longitude>-5.033196</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/23/32/d5/3c/caption.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Fes</nom>
+      <description>Fes</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>274</id>
+   <nom>Archaeological Museum of Tetouan</nom>
+   <description>2 Avenue Mohamed Ben Larbi Torres, Tetouan 93000 Morocco</description>
+   <coordinate>
+      <latitude>35.570724</latitude>
+      <longitude>-5.370654</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/06/c2/e5/2a/musee-d-archeologie-a.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Tetouan</nom>
+      <description>Tetouan</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

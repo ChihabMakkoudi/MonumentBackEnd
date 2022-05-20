@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>336</id>
+   <nom>NT Extreme Sport &amp; Travel</nom>
+   <description>Dakhla, Dakhla 73000 Morocco</description>
+   <coordinate>
+      <latitude>23.71394</latitude>
+      <longitude>-15.92757</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/a6/de/10/caption.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Dakhla</nom>
+      <description>Dakhla</description>
+   </ville>
+   <evaluations/>
+   <rating>5.0</rating>
+</Monument>

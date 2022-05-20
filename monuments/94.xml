@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>94</id>
+   <nom>Medina of Marrakesh</nom>
+   <description>Derb Fhal Zefriti n06 Derb Fhal Zefriti, Marrakech 40000 Morocco</description>
+   <coordinate>
+      <latitude>31.633635</latitude>
+      <longitude>-7.984948</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/1b/1f/8e/b4/marrakech.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Marrakech</nom>
+      <description>Marrakech</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

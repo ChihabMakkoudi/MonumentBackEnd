@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>225</id>
+   <nom>Agadir Dolphin World</nom>
+   <description>Front de mer Anza, Agadir 80000 Morocco</description>
+   <coordinate>
+      <latitude>30.45944</latitude>
+      <longitude>-9.665302</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/17/5e/79/cd/agadir-dolphin-world.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Agadir</nom>
+      <description>Agadir</description>
+   </ville>
+   <evaluations/>
+   <rating>4.0</rating>
+</Monument>

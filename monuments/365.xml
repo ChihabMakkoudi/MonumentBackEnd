@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>365</id>
+   <nom>Ras El Maa Waterfall</nom>
+   <description>East outside of Chefchaouen medina, Chefchaouen Morocco</description>
+   <coordinate>
+      <latitude>35.17103</latitude>
+      <longitude>-5.25626</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-m/1280/15/00/e5/8d/blue-houses.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Chefchaouen</nom>
+      <description>Chefchaouen</description>
+   </ville>
+   <evaluations/>
+   <rating>3.5</rating>
+</Monument>

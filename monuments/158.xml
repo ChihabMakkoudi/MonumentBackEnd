@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Monument.xsd">
+   <id>158</id>
+   <nom>Prison de Kara</nom>
+   <description>Palais de Moulay Ismail, Meknes Morocco</description>
+   <coordinate>
+      <latitude>33.89414</latitude>
+      <longitude>-5.55797</longitude>
+   </coordinate>
+   <liensImage>
+      <liensImage>https://media-cdn.tripadvisor.com/media/photo-o/0c/dc/ec/d8/prison-de-kara.jpg</liensImage>
+   </liensImage>
+   <ville>
+      <nom>Meknes</nom>
+      <description>Meknes</description>
+   </ville>
+   <evaluations/>
+   <rating>3.0</rating>
+</Monument>
