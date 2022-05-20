@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Account id="0">
+<Account xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Account.xsd" id="0">
     <nom>El</nom>
     <prenom>Ahmed</prenom>
     <email>ahmed@el.com</email>

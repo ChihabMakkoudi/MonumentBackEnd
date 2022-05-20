@@ -1,1 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><Evaluation id="4_1485"><note>3.0</note><comment>lol</comment><editeur id="1485">chihabux</editeur></Evaluation>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Evaluation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Evaluation.xsd" id="4_1485">
+    <note>3.0</note>
+    <comment>lol</comment>
+    <editeur id="1485">chihabux</editeur>
+</Evaluation>

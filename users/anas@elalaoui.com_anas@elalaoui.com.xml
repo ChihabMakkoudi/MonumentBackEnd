@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><Account id="anas@elalaoui.com"><nom>alaoui</nom><prenom>anas</prenom><email>anas@elalaoui.com</email><password>123</password></Account>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Account xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Account.xsd" id="anas@elalaoui.com">
+    <nom>alaoui</nom>
+    <prenom>anas</prenom>
+    <email>anas@elalaoui.com</email>
+    <password>password</password>
+</Account>

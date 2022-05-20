@@ -1,1 +1,2 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><Evaluation id="3_19"><note>3.5</note><comment>just changed my comment</comment><editeur id="19">anas</editeur></Evaluation>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Evaluation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="../src/main/resources/templates/Evaluation.xsd" id="3_19"><note>3.5</note><comment>just changed my comment</comment><editeur id="19">anas</editeur></Evaluation>
