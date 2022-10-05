@@ -14,14 +14,14 @@
 	<name>MonumentBackEnd</name>
 	<description>BackEnd server for the monument app</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>15</java.version>
 	</properties>
 	<dependencies>
 
 		<dependency>
 			<groupId>com.guicedee.services</groupId>
 			<artifactId>org.apache.fop</artifactId>
-			<version>1.2.2.1-jre17</version>
+			<version>1.2.2.1-jre15</version>
 		</dependency>
 
 		<dependency>
