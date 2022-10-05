@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>com.guicedee.services</groupId>
 			<artifactId>org.apache.fop</artifactId>
-			<version>1.2.2.1-jre15</version>
+			<version>1.1.0.6-jre15</version>
 		</dependency>
 
 		<dependency>
